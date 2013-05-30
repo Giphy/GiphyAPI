@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides three JSON endpoints,  translate, screensaver and search. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif.
+The [Giphy API](http://api.giphy.com) provides four JSON endpoints,  translate, screensaver, gif by id and search. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -202,6 +202,74 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 	    "data": {
 	        "id": "12jp1Z7ITCrPxe",
 	        "image_original_url": "http://media.giphy.com/media/12jp1Z7ITCrPxe/original.gif"
+	    },
+	    "meta": {
+	        "msg": "OK",
+	        "status": 200
+	    }
+	}
+
+
+## Get GIF by ID Endpoint
+
+Returns meta data about a gif, by gif id. In the below example, the gif ID is "feqkVgjJpYtjy"
+
+	http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC) get gif by id query
+
+###### Path
+
+	/v1/gifs/<gif_id>
+
+
+### Sample Response, Get GIF by ID
+
+	{
+	    "data": {
+	        "bitly_fullscreen_url": "http://gph.is/XJ1Y8Q",
+	        "bitly_gif_url": "http://gph.is/XJ200y",
+	        "bitly_tiled_url": "http://gph.is/XJ1Y8T",
+	        "id": "feqkVgjJpYtjy",
+	        "images": {
+	            "fixed_height": {
+	                "height": "200",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200.gif",
+	                "width": "445"
+	            },
+	            "fixed_height_downsampled": {
+	                "height": "200",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
+	                "width": "445"
+	            },
+	            "fixed_height_still": {
+	                "height": "200",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
+	                "width": "445"
+	            },
+	            "fixed_width": {
+	                "height": "90",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200w.gif",
+	                "width": "200"
+	            },
+	            "fixed_width_downsampled": {
+	                "height": "90",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
+	                "width": "200"
+	            },
+	            "fixed_width_still": {
+	                "height": "90",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
+	                "width": "200"
+	            },
+	            "original": {
+	                "height": "150",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/original.gif",
+	                "width": "334"
+	            }
+	        },
+	        "type": "gif",
+	        "url": "http://giphy.com/gifs/feqkVgjJpYtjy"
 	    },
 	    "meta": {
 	        "msg": "OK",
