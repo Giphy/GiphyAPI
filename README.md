@@ -88,7 +88,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
                         "frames": "3",
                         "height": "375",
                         "size": "189975",
-                        "url": "http://media0.giphy.com/media/iU1NUdMq3sx3O/200w_s.gif",
+                        "url": "http://media0.giphy.com/media/iU1NUdMq3sx3O/giphy.gif",
                         "width": "500"
                     }
                 },
