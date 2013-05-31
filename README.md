@@ -165,7 +165,7 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
                 },
                 "original": {
                     "height": "346",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/original.gif",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/giphy.gif",
                     "width": "500"
                 }
             },
@@ -201,7 +201,7 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 	{
 	    "data": {
 	        "id": "12jp1Z7ITCrPxe",
-	        "image_original_url": "http://media.giphy.com/media/12jp1Z7ITCrPxe/original.gif"
+	        "image_original_url": "http://media.giphy.com/media/12jp1Z7ITCrPxe/giphy.gif"
 	    },
 	    "meta": {
 	        "msg": "OK",
@@ -264,7 +264,7 @@ Returns meta data about a gif, by gif id. In the below example, the gif ID is "f
 	            },
 	            "original": {
 	                "height": "150",
-	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/original.gif",
+	                "url": "http://media.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
 	                "width": "334"
 	            }
 	        },
