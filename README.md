@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides four JSON endpoints,  translate, screensaver, gif by id and search. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
+The [Giphy API](http://api.giphy.com) provides five JSON endpoints,  recent, translate, seach, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -26,6 +26,125 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 ###### Parameters
 
 + api_key - The public beta key is "dc6zaTOxFJmzC"
+
+## Recent GIFs endpoint
+
+Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additional GIF size data can be looked up by using the get GIF by id.
+
+Example
+
+###### Path
+<code>/v1/gifs/recent</code>
+
+##### Parameters
+
++ tag (optional) limits recent GIFs to a specific tag.
+
+
+### Sample Response, Recent
+
+    {
+        "data": [
+            {
+                "id": "jJgZWn8Z2z4Bi", 
+                "images": {
+                    "fixed_height": {
+                        "height": "200", 
+                        "url": "http://media.giphy.com/media/jJgZWn8Z2z4Bi/200.gif", 
+                        "width": "220"
+                    }, 
+                    "fixed_height_still": {
+                        "height": "200", 
+                        "url": "http://media.giphy.com/media/jJgZWn8Z2z4Bi/200_s.gif", 
+                        "width": "220"
+                    }, 
+                    "original": {
+                        "height": "260", 
+                        "url": "http://media.giphy.com/media/jJgZWn8Z2z4Bi/giphy.gif", 
+                        "width": "286"
+                    }
+                }, 
+                "type": "gif", 
+                "update_date": "2013-06-19T01:54:14+00:00", 
+                "url": "http://giphy.com/gifs/jJgZWn8Z2z4Bi"
+            }
+            ...
+        ], 
+        "meta": {
+            "msg": "OK", 
+            "status": 200
+        }
+    }        
+
+## Translate Endpoint
+
+This is prototype endpoint for using Giphy as a translation engine for a GIF dialect.  The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words to GIFs.
+
+    http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC) translate query.
+
+
+###### Path
+<code>/v1/gifs/translate</code>
+
+###### Parameters
+
++ s - term or phrase to translate into a gif
+
+### Sample Response, Translate
+
+    {
+        "data": {
+            "bitly_fullscreen_url": "http://gph.is/XH7Sri",
+            "bitly_gif_url": "http://gph.is/XH7V6j",
+            "bitly_tiled_url": "http://gph.is/XH7Srk",
+            "id": "3avUsGhmckIYE",
+            "images": {
+                "fixed_height": {
+                    "height": "200",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200.gif",
+                    "width": "289"
+                },
+                "fixed_height_downsampled": {
+                    "height": "200",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200_d.gif",
+                    "width": "289"
+                },
+                "fixed_height_still": {
+                    "height": "200",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200_s.gif",
+                    "width": "289"
+                },
+                "fixed_width": {
+                    "height": "138",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w.gif",
+                    "width": "200"
+                },
+                "fixed_width_downsampled": {
+                    "height": "138",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w_d.gif",
+                    "width": "200"
+                },
+                "fixed_width_still": {
+                    "height": "138",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w_s.gif",
+                    "width": "200"
+                },
+                "original": {
+                    "height": "346",
+                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/giphy.gif",
+                    "width": "500"
+                }
+            },
+            "type": "gif",
+            "url": "http://giphy.com/gifs/3avUsGhmckIYE"
+        },
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        }
+    }
 
 ## Search Endpoint
 
@@ -108,75 +227,6 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
     }
 
 
-## Translate Endpoint
-
-This is prototype endpoint for using Giphy as a translation engine for a GIF dialect.  The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words to GIFs.
-
-	http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
-
-[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC) translate query.
-
-
-###### Path
-<code>/v1/gifs/translate</code>
-
-###### Parameters
-
-+ s - term or phrase to translate into a gif
-
-### Sample Response, Translate
-
-    {
-        "data": {
-            "bitly_fullscreen_url": "http://gph.is/XH7Sri",
-            "bitly_gif_url": "http://gph.is/XH7V6j",
-            "bitly_tiled_url": "http://gph.is/XH7Srk",
-            "id": "3avUsGhmckIYE",
-            "images": {
-                "fixed_height": {
-                    "height": "200",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200.gif",
-                    "width": "289"
-                },
-                "fixed_height_downsampled": {
-                    "height": "200",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200_d.gif",
-                    "width": "289"
-                },
-                "fixed_height_still": {
-                    "height": "200",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200_s.gif",
-                    "width": "289"
-                },
-                "fixed_width": {
-                    "height": "138",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w.gif",
-                    "width": "200"
-                },
-                "fixed_width_downsampled": {
-                    "height": "138",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w_d.gif",
-                    "width": "200"
-                },
-                "fixed_width_still": {
-                    "height": "138",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/200w_s.gif",
-                    "width": "200"
-                },
-                "original": {
-                    "height": "346",
-                    "url": "http://media.giphy.com/media/3avUsGhmckIYE/giphy.gif",
-                    "width": "500"
-                }
-            },
-            "type": "gif",
-            "url": "http://giphy.com/gifs/3avUsGhmckIYE"
-        },
-        "meta": {
-            "msg": "OK",
-            "status": 200
-        }
-    }
 
 
 
