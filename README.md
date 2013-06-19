@@ -31,7 +31,10 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additional GIF size data can be looked up by using the get GIF by id.
 
-Example
+    http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC) recent GIFs query.
+[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan-gosling) recent GIFs by ryan gosling tag query.
 
 ###### Path
 <code>/v1/gifs/recent</code>
