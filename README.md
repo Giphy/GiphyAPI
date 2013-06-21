@@ -7,7 +7,7 @@
 # Giphy API Documentation
 
 The Giphy API is now open to the public. We have institued a simple single public beta key
-system to let anyone quickly hack and experiment with the API. 
+system to let anyone quickly hack and experiment with the API. The API key is required for all endpoints.
 
 Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [alex@giphy.com](mailto:alex@giphy.com) or [gt@giphy.com](mailto:gt@giphy.com)
 for a unique API key.
@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides six JSON endpoints,  recent, translate, seach, flagged gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
+The [Giphy API](http://api.giphy.com) provides seven JSON endpoints, recent, translate, seach, flagged, favorites, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -42,6 +42,7 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
 ##### Parameters
 
 + tag (optional) limits recent GIFs to a specific tag.
++ limit (optional) limits the number of results returned. 
 
 
 ### Sample Response, Recent
@@ -71,7 +72,6 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
                 "update_date": "2013-06-19T01:54:14+00:00", 
                 "url": "http://giphy.com/gifs/jJgZWn8Z2z4Bi"
             }
-            ...
         ], 
         "meta": {
             "msg": "OK", 
@@ -83,9 +83,9 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
 
 This is prototype endpoint for using Giphy as a translation engine for a GIF dialect.  The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words to GIFs.
 
-    http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
+    http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC&limit=1
 
-[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC) translate query.
+[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC&limit=1) translate query.
 
 
 ###### Path
@@ -296,6 +296,66 @@ The flagged write, POST, endpoint accepts an ID to flag, and returns a list of f
         }
     }
 
+## Favorites Endpoint (read)
+
+The favorites endpoint allows favoriting by api_key. Favoriting supports both read and write, POST and GET.
+
+    http://api.giphy.com/v1/gifs/favorites?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/favorites?api_key=dc6zaTOxFJmzC) favorites, read, query
+
+##### Path
+
+<code>/v1/gifs/favorites</code>
+
+### Sample Response, Favorites (read)
+
+    {
+        "data": [
+            {
+                "api_key": "dc6zaTOxFJmzC",
+                "create_date": "2013-06-21 11:51:46",
+                "gif_id": "12HoHdqnDxz5NS",
+                "tag": ""
+            }
+        ],
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        },
+        "pagination": {
+            "count": 1,
+            "offset": 0,
+            "total_count": 1
+        }
+    }    
+
+
+## Favorites Endpoint (write)
+
+The write, POST, endpoint for favorites. Lookup additional GIF size data using the get GIF by ID endpoint.
+
+    POST http://api.giphy.com/v1/gifs/12HoHdqnDxz5NS/favorites?api_key=dc6zaTOxFJmzC
+
+##### Path
+
+<code>/v1/gifs/<gif_id>/favorites</code>
+
+### Sample Response, Favorites (write)
+
+    {
+        "data": {
+            "api_key": "dc6zaTOxFJmzC",
+            "create_date": "2013-06-21 11:51:46",
+            "gif_id": "12HoHdqnDxz5NS",
+            "tag": ""
+        },
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        }
+    }
+
 ## Screensaver Endpoint
 
 Returns a random gif, limited by tag. Excluding the tag parameter will return a random gif from the Giphy catalog.
@@ -307,6 +367,10 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 ###### Path
 
 <code>/v1/gifs/screensaver</code>
+
+OR
+
+<code>/v1/gifs/random</code>
 
 ###### Parameters
 
