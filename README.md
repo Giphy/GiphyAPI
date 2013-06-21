@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides seven JSON endpoints, recent, translate, seach, flagged, favorites, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
+The [Giphy API](http://api.giphy.com) provides eight JSON endpoints, recent, translate, seach, flagged, favorites, artists, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -166,8 +166,8 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 ###### Parameters
 
 + q - search query term or phrase
-+ limit - number of results to return, maximum 25
-+ offset - results offset, defaults to 0
++ limit - (optional) number of results to return, maximum 100. Default 25
++ offset - (optional) results offset, defaults to 0
 
 ### Sample Response, Search
 
@@ -374,7 +374,7 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 OR
 
     /v1/gifs/random
-    
+
 
 ###### Parameters
 
@@ -392,6 +392,116 @@ OR
 	        "status": 200
 	    }
 	}
+
+
+## Artists Endpoint
+
+Return a list of Giphy GIF artists, the optional username parameter limits the response to GIFs created
+by artist username. Support pagination via limit and offset parameters.
+
+    http://api.giphy.com/v1/gifs/artists?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/artists?api_key=dc6zaTOxFJmzC) artist query
+[Example](http://api.giphy.com/v1/gifs/artists?api_key=dc6zaTOxFJmzC&username=mrdiv&limit=1) GIFs by artist, mrdiv
+
+##### Path
+
+    /v1/gifs/artists
+
+##### Parameters
+
++ username (optional) limits response to GIFs created by artist
++ limit (optional) limits the results returned. Max is 100
++ offset (optional) start position in results. Defaults to 0 
+
+### Sample Response, Artists
+
+    {
+        "data": [
+            {
+                "avatar": "http://media.giphy.com/avatars/mrdiv.gif",
+                "count": 61,
+                "name": "mr. div",
+                "username": "mrdiv",
+                "website": "http://mrdiv.tumblr.com/"
+            }
+            ...
+        ],
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        },
+        "pagination": {
+            "count": 26,
+            "offset": 0,
+            "total_count": 26
+        }
+    }
+
+
+### Sample Reponse, Artist - mrdiv
+
+    {
+        "data": [
+            {
+                "bitly_fullscreen_url": "http://gph.is/13YkU2A",
+                "bitly_gif_url": "http://gph.is/13YkU2y",
+                "bitly_tiled_url": "http://gph.is/13YkTf4",
+                "embed_url": "http://giphy.com/embed/7rzbxdu0ZEXLy",
+                "id": "7rzbxdu0ZEXLy",
+                "images": {
+                    "fixed_height": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200.gif",
+                        "width": "200"
+                    },
+                    "fixed_height_downsampled": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200_d.gif",
+                        "width": "200"
+                    },
+                    "fixed_height_still": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200_s.gif",
+                        "width": "200"
+                    },
+                    "fixed_width": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_downsampled": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w_d.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_still": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w_s.gif",
+                        "width": "200"
+                    },
+                    "original": {
+                        "frames": "9",
+                        "height": "500",
+                        "size": "1012692",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/giphy.gif",
+                        "width": "500"
+                    }
+                },
+                "type": "gif",
+                "url": "http://giphy.com/gifs/7rzbxdu0ZEXLy"
+            }
+        ],
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        },
+        "pagination": {
+            "count": 1,
+            "offset": null,
+            "total_count": 61
+        }
+    }
 
 
 ## Get GIF by ID Endpoint
@@ -461,6 +571,134 @@ Returns meta data about a gif, by gif id. In the below example, the gif ID is "f
 	    }
 	}
 
+
+## Get GIFs by ID Endpoint
+
+A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkVgjJpYtjy and 7rzbxdu0ZEXLy
+
+    http://api.giphy.com/v1/gifs?api_key=dc6zaTOxFJmzC&ids=feqkVgjJpYtjy,7rzbxdu0ZEXLy
+
+[Example](http://api.giphy.com/v1/gifs?api_key=dc6zaTOxFJmzC&ids=feqkVgjJpYtjy,7rzbxdu0ZEXLy) get GIFs by Id
+
+##### Path
+
+    /v1/gifs
+
+##### Parameters
+
++ ids - a comma separated list of IDs to fetch GIF size data
+
+## Sample Response, Get GIFs by ID
+
+    {
+        "data": [
+            {
+                "bitly_fullscreen_url": "http://gph.is/13YkU2A",
+                "bitly_gif_url": "http://gph.is/13YkU2y",
+                "bitly_tiled_url": "http://gph.is/13YkTf4",
+                "embed_url": "http://giphy.com/embed/7rzbxdu0ZEXLy",
+                "id": "7rzbxdu0ZEXLy",
+                "images": {
+                    "fixed_height": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200.gif",
+                        "width": "200"
+                    },
+                    "fixed_height_downsampled": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200_d.gif",
+                        "width": "200"
+                    },
+                    "fixed_height_still": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200_s.gif",
+                        "width": "200"
+                    },
+                    "fixed_width": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_downsampled": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w_d.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_still": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/200w_s.gif",
+                        "width": "200"
+                    },
+                    "original": {
+                        "frames": "9",
+                        "height": "500",
+                        "size": "1012692",
+                        "url": "http://media0.giphy.com/media/7rzbxdu0ZEXLy/giphy.gif",
+                        "width": "500"
+                    }
+                },
+                "type": "gif",
+                "url": "http://giphy.com/gifs/7rzbxdu0ZEXLy"
+            },
+            {
+                "bitly_fullscreen_url": "http://gph.is/XJ1Y8Q",
+                "bitly_gif_url": "http://gph.is/XJ200y",
+                "bitly_tiled_url": "http://gph.is/XJ1Y8T",
+                "embed_url": "http://giphy.com/embed/feqkVgjJpYtjy",
+                "id": "feqkVgjJpYtjy",
+                "images": {
+                    "fixed_height": {
+                        "height": "200",
+                        "url": "http://media3.giphy.com/media/feqkVgjJpYtjy/200.gif",
+                        "width": "445"
+                    },
+                    "fixed_height_downsampled": {
+                        "height": "200",
+                        "url": "http://media2.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
+                        "width": "445"
+                    },
+                    "fixed_height_still": {
+                        "height": "200",
+                        "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
+                        "width": "445"
+                    },
+                    "fixed_width": {
+                        "height": "90",
+                        "url": "http://media1.giphy.com/media/feqkVgjJpYtjy/200w.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_downsampled": {
+                        "height": "90",
+                        "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
+                        "width": "200"
+                    },
+                    "fixed_width_still": {
+                        "height": "90",
+                        "url": "http://media2.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
+                        "width": "200"
+                    },
+                    "original": {
+                        "frames": "27",
+                        "height": "150",
+                        "size": "511581",
+                        "url": "http://media3.giphy.com/media/feqkVgjJpYtjy/original.gif",
+                        "width": "334"
+                    }
+                },
+                "type": "gif",
+                "url": "http://giphy.com/gifs/feqkVgjJpYtjy"
+            }
+        ],
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        },
+        "pagination": {
+            "count": 2,
+            "offset": 0,
+            "total_count": 2
+        }
+    }
 
 ## Code Examples
 
