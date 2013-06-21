@@ -6,7 +6,7 @@
 
 # Giphy API Documentation
 
-The Giphy API is now open to the public. We have institued a simple single public beta key
+The Giphy API is now open to the public. We have institued a simple, single public beta key
 system to let anyone quickly hack and experiment with the API. An API key is required for all endpoints.
 
 Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [alex@giphy.com](mailto:alex@giphy.com) or [gt@giphy.com](mailto:gt@giphy.com)
@@ -15,7 +15,19 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides nine JSON endpoints: recent, translate, seach, flagged, favorites, artists, gif by id, gifs by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. 
+The [Giphy API](http://api.giphy.com) provides nine JSON endpoints:
+
++ recent
++ translate
++ search
++ flagged
++ favorites
++ artists
++ gif by id
++ gifs by id
++ screensaver
+
+The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
