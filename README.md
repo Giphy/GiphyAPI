@@ -37,7 +37,8 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
 [Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan-gosling) recent GIFs by ryan gosling tag query.
 
 ###### Path
-<code>/v1/gifs/recent</code>
+
+    /v1/gifs/recent
 
 ##### Parameters
 
@@ -89,7 +90,8 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 
 
 ###### Path
-<code>/v1/gifs/translate</code>
+
+    /v1/gifs/translate
 
 ###### Parameters
 
@@ -158,7 +160,8 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 [Example](http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=1&offset=0) search query.
 
 ###### Path
-<code>/v1/gifs/search</code>
+
+    /v1/gifs/search
 
 ###### Parameters
 
@@ -241,7 +244,7 @@ The flagged endpoint is the first read and write endpoint on the Giphy API. The 
 
 ###### Path
 
-<code>/v1/gifs/flagged</code>
+    /v1/gifs/flagged
 
 
 ### Sample Response, Flagged (read)
@@ -277,7 +280,7 @@ The flagged write, POST, endpoint accepts an ID to flag, and returns a list of f
 
 ##### Path
 
-<code>/v1/gifs/<gif_id>/flagged</code>
+    /v1/gifs/<gif_id>/flagged
 
 ## Sample Response, Flagged (write)
 
@@ -306,7 +309,7 @@ The favorites endpoint allows favoriting by api_key. Favoriting supports both re
 
 ##### Path
 
-<code>/v1/gifs/favorites</code>
+    /v1/gifs/favorites
 
 ### Sample Response, Favorites (read)
 
@@ -339,7 +342,7 @@ The write, POST, endpoint for favorites. Lookup additional GIF size data using t
 
 ##### Path
 
-<code>/v1/gifs/<gif_id>/favorites</code>
+    /v1/gifs/<gif_id>/favorites
 
 ### Sample Response, Favorites (write)
 
@@ -366,11 +369,12 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 
 ###### Path
 
-<code>/v1/gifs/screensaver</code>
+    /v1/gifs/screensaver
 
 OR
 
-<code>/v1/gifs/random</code>
+    /v1/gifs/random
+    
 
 ###### Parameters
 
