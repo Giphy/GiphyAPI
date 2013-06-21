@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides eight JSON endpoints, recent, translate, seach, flagged, favorites, artists, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
+The [Giphy API](http://api.giphy.com) provides nine JSON endpoints, recent, translate, seach, flagged, favorites, artists, gif by id, gifs by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. 
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -27,7 +27,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 + api_key - The public beta key is "dc6zaTOxFJmzC"
 
-## Recent GIFs endpoint
+## Recent GIFs Endpoint
 
 Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additional GIF size data can be looked up by using the get GIF by id.
 
