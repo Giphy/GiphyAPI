@@ -6,7 +6,7 @@
 
 # Giphy API Documentation
 
-The Giphy API is now open to the public. We have institued a simple read-only, single public beta key
+The Giphy API is now open to the public. We have institued a simple single public beta key
 system to let anyone quickly hack and experiment with the API. 
 
 Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [alex@giphy.com](mailto:alex@giphy.com) or [gt@giphy.com](mailto:gt@giphy.com)
@@ -15,7 +15,7 @@ for a unique API key.
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides five JSON endpoints,  recent, translate, seach, gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
+The [Giphy API](http://api.giphy.com) provides six JSON endpoints,  recent, translate, seach, flagged gif by id and screensaver. The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects. Screensaver returns a random gif. And get gif id returns meta data about a single gif.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -231,7 +231,70 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 
 
 
+## Flagged Endpoint (read)
 
+The flagged endpoint is the first read and write endpoint on the Giphy API. The flagged read, GET, returns GIFs flagged as NSFW for this api_key. See format for the write endpoint, below.
+
+    http://api.giphy.com/v1/gifs/flagged?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/flagged?api_key=dc6zaTOxFJmzC) flagged read query
+
+###### Path
+
+<code>/v1/gifs/flagged</code>
+
+
+### Sample Response, Flagged (read)
+
+    {
+        "data": [
+            {
+                "api_key": "dc6zaTOxFJmzC",
+                "create_date": "2013-06-21 11:59:37",
+                "gif_id": "m5QHf0caAwgMw",
+                "is_inappropriate": "1",
+                "is_wrong_source": "0",
+                "source_corrected": ""
+            }
+        ],
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        },
+        "pagination": {
+            "count": 1,
+            "offset": 0,
+            "total_count": 1
+        }
+    }
+
+## Flagged Endpoint (write)
+
+The flagged write, POST, endpoint accepts an ID to flag, and returns a list of flagged GIF id by this api_key
+
+    POST http://api.giphy.com/v1/gifs/m5QHf0caAwgMw/flagged?api_key=dc6zaTOxFJmzC
+
+
+##### Path
+
+<code>/v1/gifs/<gif_id>/flagged</code>
+
+## Sample Response, Flagged (write)
+
+    {
+        "data": {
+            "api_key": "dc6zaTOxFJmzC",
+            "create_date": "2013-06-21 12:09:09",
+            "gif_id": "m5QHf0caAwgMw",
+            "is_inappropriate": false,
+            "is_wrong_source": false,
+            "source_corrected": ""
+        },
+        "meta": {
+            "msg": "OK",
+            "status": 200
+        }
+    }
 
 ## Screensaver Endpoint
 
@@ -243,7 +306,7 @@ Returns a random gif, limited by tag. Excluding the tag parameter will return a 
 
 ###### Path
 
-    /v1/gifs/screensaver
+<code>/v1/gifs/screensaver</code>
 
 ###### Parameters
 
