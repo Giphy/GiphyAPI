@@ -46,7 +46,7 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
     http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC
 
 [Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC) recent GIFs query.
-[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan-gosling) recent GIFs by ryan gosling tag query.
+[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan+gosling) recent GIFs by ryan gosling tag query.
 
 ###### Path
 
