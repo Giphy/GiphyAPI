@@ -9,8 +9,7 @@
 The Giphy API is now open to the public. We have institued a simple, single public beta key
 system to let anyone quickly hack and experiment with the API. An API key is required for all endpoints.
 
-Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [alex@giphy.com](mailto:alex@giphy.com) or [gt@giphy.com](mailto:gt@giphy.com)
-for a unique API key.
+Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) for a unique API key.
 
 
 ## Overview
@@ -768,8 +767,7 @@ Projects that leverage the Giphy API can be submitted to [Giphy labs](http://lab
 Please submit corrections via [github issues](https://github.com/giphy/GiphyAPI/issues). Please see the [terms](http://giphy.com/terms) for any restrictions on using 
 the service. 
 
-Note: the public beta key will be decommissioned at a point in the future. Usage in production is prohibited and not recommended. Developers seeking to leverage the Giphy API should contact [alex@giphy.com](mailto:alex@giphy.com) or [gt@giphy.com](mailto:gt@giphy.com)
-for a unique API key.
+Note: the public beta key will be decommissioned at a point in the future. Usage in production is prohibited and not recommended. Developers seeking to leverage the Giphy API should contact [api@giphy.com](mailto:api@giphy.com) for a unique API key.
 
 We recommend the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
 
