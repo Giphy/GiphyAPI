@@ -25,6 +25,7 @@ The [Giphy API](http://api.giphy.com) provides nine JSON endpoints:
 + gif by id
 + gifs by id
 + screensaver
++ trending
 
 The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. Learn more about the rest in the documentation below.
 
@@ -45,7 +46,7 @@ Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additiona
     http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC
 
 [Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC) recent GIFs query.
-[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan+gosling) recent GIFs by ryan gosling tag query.
+[Example](http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC&tag=ryan-gosling) recent GIFs by ryan gosling tag query.
 
 ###### Path
 
@@ -710,6 +711,91 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
             "total_count": 2
         }
     }
+
+
+## Trending GIFs Endpoint
+
+Fetch gifs currently trending online. The data returned mirrors that used to create [The Hot 100](http://giphy.com/hot100) list of gifs on [Giphy](http://giphy.com). Returns 25 results by default.
+
+    http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC) trending GIFs query.
+[Example](http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=5) trending GIFs limited to 5 results.
+
+###### Path
+
+    /v1/gifs/trending
+
+##### Parameters
+
++ limit (optional) limits the number of results returned. 
+
+
+### Sample Response, Trending
+
+    
+    {
+        data: [
+            {
+                type: "gif",
+                id: "jI6YyYxUHHEw8",
+                url: "http://giphy.com/gifs/jI6YyYxUHHEw8",
+                bitly_gif_url: "",
+                bitly_fullscreen_url: "",
+                bitly_tiled_url: "",
+                embed_url: "http://giphy.com/embed/jI6YyYxUHHEw8",
+                images: {
+                    fixed_height: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200.gif",
+                        width: "333",
+                        height: "200"
+                    },
+                    fixed_height_still: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200_s.gif",
+                        width: "333",
+                        height: "200"
+                    },
+                    fixed_height_downsampled: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200_d.gif",
+                        width: "333",
+                        height: "200"
+                    },
+                    fixed_width: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200w.gif",
+                        width: "200",
+                        height: "120"
+                    },
+                    fixed_width_still: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200w_s.gif",
+                        width: "200",
+                        height: "120"
+                    },
+                    fixed_width_downsampled: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/200w_d.gif",
+                        width: "200",
+                        height: "120"
+                    },
+                    original: {
+                        url: "http://media0.giphy.com/media/jI6YyYxUHHEw8/giphy.gif",
+                        width: "500",
+                        height: "300",
+                        size: "618230",
+                        frames: "68"
+                    }
+                }
+            }
+        ],
+        pagination: {
+            total_count: 1447,
+            count: 1,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+        }
+    }
+
 
 ## Code Examples
 
