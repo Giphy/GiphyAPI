@@ -26,6 +26,11 @@ The [Giphy API](http://api.giphy.com) provides nine JSON endpoints:
 + gifs by id
 + screensaver
 + trending
++ reactions
++ gifs by reaction
++ categories
++ tags by category
++ gifs by category tag
 
 The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. Learn more about the rest in the documentation below.
 
@@ -794,6 +799,293 @@ Fetch gifs currently trending online. The data returned mirrors that used to cre
             status: 200,
             msg: "OK"
         }
+    }
+
+
+## Reactions Endpoint
+
+Returns a list of Reaction categories. For each reaction returned in the list, an appropriate emoji icon is provided in small, medium and large sizes, in addition to an example gif classified under that reaction.
+
+    http://api.giphy.com/v1/gifs/reactions?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/reactions?api_key=dc6zaTOxFJmzC) reactions query
+
+##### Path
+
+    /v1/gifs/reactions
+
+### Sample Response, Reactions
+
+    {
+        "data": [
+            {
+                id: "2",
+                name: "Happy",
+                name_encoded: "happy",
+                icon_small: "http://media.giphy.com/reactions/smiley-face/small.png",
+                icon_medium: "http://media.giphy.com/reactions/smiley-face/medium.png",
+                icon_large: "http://media.giphy.com/reactions/smiley-face/large.png",
+                icon_hover: "http://media.giphy.com/reactions/smiley-face/hover.gif",
+                count: 22
+            },
+            ...
+        ],
+        pagination: {
+            total_count: 12,
+            count: 12,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+    }
+
+## GIFs by Reaction Endpoint
+
+Returns gifs classified under a specified reaction category. In this case, the category is "sad."
+
+    http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) gif by sad reaction query
+
+##### Path
+
+    /v1/gifs/reactions/reaction
+
+##### Parameters
+
+    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
+    + offset (optional) start position in results. Defaults to 0 
+
+### Sample Response, GIFs by Reaction 
+
+    {
+        "data": [
+            {
+                type: "gif",
+                id: "2vZ4On0ZqjuzC",
+                url: "http://giphy.com/gifs/2vZ4On0ZqjuzC",
+                bitly_gif_url: "http://gph.is/12ONAOU",
+                bitly_fullscreen_url: "http://gph.is/12ONzKT",
+                bitly_tiled_url: "http://gph.is/12ONAOY",
+                embed_url: "http://giphy.com/embed/2vZ4On0ZqjuzC",
+                images: {
+                    fixed_height: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_height_still: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_s.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_height_downsampled: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_d.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_width: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    fixed_width_still: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_s.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    fixed_width_downsampled: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_d.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    original: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/giphy.gif",
+                        width: "500",
+                        height: "281",
+                        size: "968007",
+                        frames: "21"
+                    }
+                }
+            },
+            ...
+        ],
+        pagination: {
+            total_count: 12,
+            count: 12,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+    }
+
+## Categories Endpoint
+
+Returns a complete list of GIF categories, compiled by the Giphy editorial team. 
+
+    http://api.giphy.com/v1/gifs/categories?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/categories?api_key=dc6zaTOxFJmzC) categories query
+
+##### Path
+
+    /v1/gifs/categories
+
+### Sample Response, Categories
+
+    {
+        "data": [
+            {
+                name: "actions",
+                name_encoded: "actions"
+            },
+            ...
+        ],
+        pagination: {
+            total_count: 27,
+            count: 27,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+    }
+
+## Tags by Category Endpoint
+
+Returns a complete list of tags under a specified GIF category. In this case, the category is "actions."
+
+    http://api.giphy.com/v1/gifs/categories/actions?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/categories/actions?api_key=dc6zaTOxFJmzC) tags by actions category query
+
+##### Path
+
+    /v1/gifs/categories/category
+
+### Sample Response, Categories
+
+    {
+        "data": [
+            {
+                name_encoded: "tossing-drink"
+                name: "tossing drink",
+
+            },
+            ...
+        ],
+        pagination: {
+            total_count: 23,
+            count: 23,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+    }
+
+## GIFs by Category Tag Endpoint
+
+Returns gifs classified under a specified category tag. In this case, the category tag is "tossing drink."
+
+    http://api.giphy.com/v1/gifs/categories/actions/tossing-drink?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/categories/actions/tossing-drink?api_key=dc6zaTOxFJmzC) gifs by category tag "tossing drink" query
+
+##### Path
+
+    /v1/gifs/categories/category/tag
+
+##### Parameters
+
+    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
+    + offset (optional) start position in results. Defaults to 0 
+
+### Sample Response, GIFs by Reaction 
+
+    {
+        "data": [
+        ## GIF by Reaction Endpoint
+
+Returns gifs classified under a specified reaction category. In this case, the category is "sad."
+
+    http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) gif by reaction query
+
+##### Path
+
+    /v1/gifs/reactions/reaction
+
+##### Parameters
+
+    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
+    + offset (optional) start position in results. Defaults to 0 
+
+### Sample Response, GIFs by Reaction 
+
+    {
+        "data": [
+            {
+                type: "gif",
+                id: "2vZ4On0ZqjuzC",
+                url: "http://giphy.com/gifs/2vZ4On0ZqjuzC",
+                bitly_gif_url: "http://gph.is/12ONAOU",
+                bitly_fullscreen_url: "http://gph.is/12ONzKT",
+                bitly_tiled_url: "http://gph.is/12ONAOY",
+                embed_url: "http://giphy.com/embed/2vZ4On0ZqjuzC",
+                images: {
+                    fixed_height: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_height_still: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_s.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_height_downsampled: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_d.gif",
+                        width: "356",
+                        height: "200"
+                    },
+                    fixed_width: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    fixed_width_still: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_s.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    fixed_width_downsampled: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_d.gif",
+                        width: "200",
+                        height: "112"
+                    },
+                    original: {
+                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/giphy.gif",
+                        width: "500",
+                        height: "281",
+                        size: "968007",
+                        frames: "21"
+                    }
+                }
+            },
+            ...
+        ],
+        pagination: {
+            total_count: 25,
+            count: 25,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
     }
 
 
