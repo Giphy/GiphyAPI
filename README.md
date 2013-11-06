@@ -810,7 +810,7 @@ Returns a list of Reaction categories. For each reaction returned in the list, a
 
 [Example](http://api.giphy.com/v1/gifs/reactions?api_key=dc6zaTOxFJmzC) reactions query
 
-##### Path
+###### Path
 
     /v1/gifs/reactions
 
@@ -848,7 +848,7 @@ Returns gifs classified under a specified reaction category. In this case, the c
 
 [Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) gif by sad reaction query
 
-##### Path
+###### Path
 
     /v1/gifs/reactions/reaction
 
@@ -929,7 +929,7 @@ Returns a complete list of GIF categories, compiled by the Giphy editorial team.
 
 [Example](http://api.giphy.com/v1/gifs/categories?api_key=dc6zaTOxFJmzC) categories query
 
-##### Path
+###### Path
 
     /v1/gifs/categories
 
@@ -961,7 +961,7 @@ Returns a complete list of tags under a specified GIF category. In this case, th
 
 [Example](http://api.giphy.com/v1/gifs/categories/actions?api_key=dc6zaTOxFJmzC) tags by actions category query
 
-##### Path
+###### Path
 
     /v1/gifs/categories/category
 
@@ -994,7 +994,7 @@ Returns gifs classified under a specified category tag. In this case, the catego
 
 [Example](http://api.giphy.com/v1/gifs/categories/actions/tossing-drink?api_key=dc6zaTOxFJmzC) gifs by category tag "tossing drink" query
 
-##### Path
+###### Path
 
     /v1/gifs/categories/category/tag
 
@@ -1003,76 +1003,55 @@ Returns gifs classified under a specified category tag. In this case, the catego
     + limit (optional) limits the results returned. Max is 100. Defaults to 25.
     + offset (optional) start position in results. Defaults to 0 
 
-### Sample Response, GIFs by Reaction 
-
-    {
-        "data": [
-        ## GIF by Reaction Endpoint
-
-Returns gifs classified under a specified reaction category. In this case, the category is "sad."
-
-    http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC
-
-[Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) gif by reaction query
-
-##### Path
-
-    /v1/gifs/reactions/reaction
-
-##### Parameters
-
-    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
-    + offset (optional) start position in results. Defaults to 0 
-
-### Sample Response, GIFs by Reaction 
+### Sample Response, GIFs by Category Tag
 
     {
         "data": [
             {
                 type: "gif",
-                id: "2vZ4On0ZqjuzC",
-                url: "http://giphy.com/gifs/2vZ4On0ZqjuzC",
-                bitly_gif_url: "http://gph.is/12ONAOU",
-                bitly_fullscreen_url: "http://gph.is/12ONzKT",
-                bitly_tiled_url: "http://gph.is/12ONAOY",
-                embed_url: "http://giphy.com/embed/2vZ4On0ZqjuzC",
+                id: "r2pADN7McRZMk",
+                url: "http://giphy.com/gifs/r2pADN7McRZMk",
+                bitly_gif_url: "http://gph.is/XLeTr2",
+                bitly_fullscreen_url: "http://gph.is/XLeV28",
+                bitly_tiled_url: "http://gph.is/XLeTr8",
+                embed_url: "http://giphy.com/embed/r2pADN7McRZMk",
                 images: {
                     fixed_height: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200.gif",
-                        width: "356",
+                        url: "http://media0.giphy.com/media/r2pADN7McRZMk/200.gif",
+                        width: "331",
                         height: "200"
                     },
                     fixed_height_still: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_s.gif",
-                        width: "356",
+                        url: "http://media1.giphy.com/media/r2pADN7McRZMk/200_s.gif",
+                        width: "331",
                         height: "200"
                     },
                     fixed_height_downsampled: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200_d.gif",
-                        width: "356",
+                        url: "http://media3.giphy.com/media/r2pADN7McRZMk/200_d.gif",
+                        width: "331",
                         height: "200"
                     },
                     fixed_width: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w.gif",
+                        url: "http://media1.giphy.com/media/r2pADN7McRZMk/200w.gif",
                         width: "200",
-                        height: "112"
+                        height: "121"
                     },
                     fixed_width_still: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_s.gif",
+                        url: "http://media2.giphy.com/media/r2pADN7McRZMk/200w_s.gif",
                         width: "200",
-                        height: "112"
+                        height: "121"
                     },
                     fixed_width_downsampled: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/200w_d.gif",
+                        url: "http://media2.giphy.com/media/r2pADN7McRZMk/200w_d.gif",
                         width: "200",
-                        height: "112"
+                        height: "121"
                     },
                     original: {
-                        url: "http://media0.giphy.com/media/2vZ4On0ZqjuzC/giphy.gif",
+                        url: "http://media3.giphy.com/media/r2pADN7McRZMk/giphy.gif",
                         width: "500",
-                        height: "281",
-                        size: "968007",
-                        frames: "21"
+                        height: "302",
+                        size: "885056",
+                        frames: "10"
                     }
                 }
             },
