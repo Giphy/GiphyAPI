@@ -852,10 +852,10 @@ Returns gifs classified under a specified reaction category. In this case, the c
 
     /v1/gifs/reactions/reaction
 
-##### Parameters
+###### Parameters
 
-    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
-    + offset (optional) start position in results. Defaults to 0 
++ limit (optional) limits the results returned. Max is 100. Defaults to 25.
++ offset (optional) start position in results. Defaults to 0 
 
 ### Sample Response, GIFs by Reaction 
 
@@ -1000,8 +1000,8 @@ Returns gifs classified under a specified category tag. In this case, the catego
 
 ##### Parameters
 
-    + limit (optional) limits the results returned. Max is 100. Defaults to 25.
-    + offset (optional) start position in results. Defaults to 0 
++ limit (optional) limits the results returned. Max is 100. Defaults to 25.
++ offset (optional) start position in results. Defaults to 0 
 
 ### Sample Response, GIFs by Category Tag
 
