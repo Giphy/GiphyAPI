@@ -22,17 +22,17 @@ The [Giphy API](http://api.giphy.com) provides nine JSON endpoints:
 + flagged
 + favorites
 + artists
-+ gif by id
-+ gifs by id
++ GIF by id
++ GIFs by id
 + screensaver
 + trending
 + reactions
-+ gifs by reaction
++ GIFs by reaction
 + categories
 + tags by category
-+ gifs by category tag
++ GIFs by category tag
 
-The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random gif. Learn more about the rest in the documentation below.
+The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and screensaver returns a random GIF. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -46,7 +46,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 ## Recent GIFs Endpoint
 
-Fetch most recent gifs, optionally limited by tag. Returns 10 results. Additional GIF size data can be looked up by using the get GIF by id.
+Fetch most recent GIFs, optionally limited by tag. Returns 10 results. Additional GIF size data can be looked up by using the get GIF by id.
 
     http://api.giphy.com/v1/gifs/recent?api_key=dc6zaTOxFJmzC
 
@@ -112,7 +112,7 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 
 ###### Parameters
 
-+ s - term or phrase to translate into a gif
++ s - term or phrase to translate into a GIF
 
 ### Sample Response, Translate
 
@@ -183,8 +183,8 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 ###### Parameters
 
 + q - search query term or phrase
-+ limit - (optional) number of results to return, maximum 100. Default 25
-+ offset - (optional) results offset, defaults to 0
++ limit - (optional) number of results to return, maximum 100. Default 25.
++ offset - (optional) results offset, defaults to 0.
 
 ### Sample Response, Search
 
@@ -378,7 +378,7 @@ The write, POST, endpoint for favorites. Lookup additional GIF size data using t
 
 ## Screensaver Endpoint
 
-Returns a random gif, limited by tag. Excluding the tag parameter will return a random gif from the Giphy catalog.
+Returns a random GIF, limited by tag. Excluding the tag parameter will return a random GIF from the Giphy catalog.
 
     http://api.giphy.com/v1/gifs/screensaver?api_key=dc6zaTOxFJmzC&tag=american-psycho
 
@@ -395,7 +395,7 @@ OR
 
 ###### Parameters
 
-+ tag - the gif tag to limit randomness by
++ tag - the GIF tag to limit randomness by
 
 ### Sample Response, Screeensaver
 
@@ -427,9 +427,9 @@ by artist username. Support pagination via limit and offset parameters.
 
 ##### Parameters
 
-+ username (optional) limits response to GIFs created by artist
-+ limit (optional) limits the results returned. Max is 100
-+ offset (optional) start position in results. Defaults to 0 
++ username (optional) limits response to GIFs created by artist.
++ limit (optional) limits the results returned. Max is 100.
++ offset (optional) start position in results. Defaults to 0 .
 
 ### Sample Response, Artists
 
@@ -523,11 +523,11 @@ by artist username. Support pagination via limit and offset parameters.
 
 ## Get GIF by ID Endpoint
 
-Returns meta data about a gif, by gif id. In the below example, the gif ID is "feqkVgjJpYtjy"
+Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "feqkVgjJpYtjy"
 
 	http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC
 
-[Example](http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC) get gif by id query
+[Example](http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC) get GIF by id query
 
 ###### Path
 
@@ -603,7 +603,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 ##### Parameters
 
-+ ids - a comma separated list of IDs to fetch GIF size data
++ ids - a comma separated list of IDs to fetch GIF size data.
 
 ## Sample Response, Get GIFs by ID
 
@@ -720,7 +720,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 ## Trending GIFs Endpoint
 
-Fetch gifs currently trending online. The data returned mirrors that used to create [The Hot 100](http://giphy.com/hot100) list of gifs on [Giphy](http://giphy.com). Returns 25 results by default.
+Fetch GIFs currently trending online. The data returned mirrors that used to create [The Hot 100](http://giphy.com/hot100) list of GIFs on [Giphy](http://giphy.com). Returns 25 results by default.
 
     http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC
 
@@ -804,7 +804,7 @@ Fetch gifs currently trending online. The data returned mirrors that used to cre
 
 ## Reactions Endpoint
 
-Returns a list of Reaction categories. For each reaction returned in the list, an appropriate emoji icon is provided in small, medium and large sizes, in addition to an example gif classified under that reaction.
+Returns a list of Reaction categories. For each reaction returned in the list, an appropriate emoji icon is provided in small, medium and large sizes, in addition to an example GIF classified under that reaction.
 
     http://api.giphy.com/v1/gifs/reactions?api_key=dc6zaTOxFJmzC
 
@@ -842,11 +842,11 @@ Returns a list of Reaction categories. For each reaction returned in the list, a
 
 ## GIFs by Reaction Endpoint
 
-Returns gifs classified under a specified reaction category. In this case, the category is "sad."
+Returns GIFs classified under a specified reaction category. In this case, the category is "sad."
 
     http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC
 
-[Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) gif by sad reaction query
+[Example](http://api.giphy.com/v1/gifs/reactions/sad?api_key=dc6zaTOxFJmzC) GIF by sad reaction query
 
 ###### Path
 
@@ -855,7 +855,7 @@ Returns gifs classified under a specified reaction category. In this case, the c
 ###### Parameters
 
 + limit (optional) limits the results returned. Max is 100. Defaults to 25.
-+ offset (optional) start position in results. Defaults to 0 
++ offset (optional) start position in results. Defaults to 0. 
 
 ### Sample Response, GIFs by Reaction 
 
@@ -988,7 +988,7 @@ Returns a complete list of tags under a specified GIF category. In this case, th
 
 ## GIFs by Category Tag Endpoint
 
-Returns gifs classified under a specified category tag. In this case, the category tag is "tossing drink."
+Returns GIFs classified under a specified category tag. In this case, the category tag is "tossing drink."
 
     http://api.giphy.com/v1/gifs/categories/actions/tossing-drink?api_key=dc6zaTOxFJmzC
 
@@ -1001,7 +1001,7 @@ Returns gifs classified under a specified category tag. In this case, the catego
 ##### Parameters
 
 + limit (optional) limits the results returned. Max is 100. Defaults to 25.
-+ offset (optional) start position in results. Defaults to 0 
++ offset (optional) start position in results. Defaults to 0. 
 
 ### Sample Response, GIFs by Category Tag
 
