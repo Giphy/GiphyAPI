@@ -23,7 +23,7 @@ The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
 + random 
 + trending
 
-The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects andrandom returns a single random GIF, optionally limited to a specified tag. Learn more about the rest in the documentation below.
+The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and random returns a single random GIF, optionally limited to a specified tag. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -391,15 +391,11 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 
 Returns a random GIF, limited by tag. Excluding the tag parameter will return a random GIF from the Giphy catalog.
 
-    http://api.giphy.com/v1/gifs/screensaver?api_key=dc6zaTOxFJmzC&tag=american+psycho
+    http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho
 
-[Example](http://api.giphy.com/v1/gifs/screensaver?api_key=dc6zaTOxFJmzC&tag=american+psycho) screensaver query
+[Example](http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho) random query
 
 ###### Path
-
-    /v1/gifs/screensaver
-
-OR
 
     /v1/gifs/random
 
@@ -408,7 +404,7 @@ OR
 
 + tag - the GIF tag to limit randomness by
 
-### Sample Response, Screeensaver
+### Sample Response, Random
 
 	{
 	    "data": {
@@ -563,5 +559,5 @@ the service.
 
 Note: the public beta key will be decommissioned at a point in the future. Usage in production is prohibited and not recommended. Developers seeking to leverage the Giphy API should contact [api@giphy.com](mailto:api@giphy.com) for a unique API key.
 
-We recommend the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
+We recommend the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en).
 
