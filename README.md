@@ -1,4 +1,3 @@
-
 <p align="center">
 <img align="center" src="api_giphy_logo.png" alt="API Giphy logo"/>
 </p>
@@ -549,7 +548,7 @@ Below are code samples in Python, JavaScript, Ruby, PHP and the command line on 
 
 ## Sharing and Promoting your Giphy API Project
 
-Projects that leverage the Giphy API can be submitted to [Giphy labs](http://labs.giphy.com). Learn more about [Giphy labs](http://labs.giphy.com).
+Projects that leverage the Giphy API can be submitted to [Giphy labs](http://giphy.com/labs). Learn more about [Giphy labs](http://giphy.com/labs).
 
 
 ## Additional Information
