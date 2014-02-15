@@ -5,10 +5,18 @@
 
 # Giphy API Documentation
 
-The Giphy API is now open to the public. We have institued a simple, single public beta key
-system to let anyone quickly hack and experiment with the API. An API key is required for all endpoints.
+Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine.
 
-Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. If you would like to use Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) for a unique API key.
+The Giphy API is open to the public. We have institued a simple, single public beta key
+system to let anyone quickly hack and experiment with the API. 
+
+An API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key to develop your application and experiment with the API. 
+
+If you would like to use Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) for a unique API key with the following information:
+
+- The app name with brief description, web / app store links, etc.
+
+- If this is a new app, do you have a go-live date? (it’s ok if you don't)
 
 
 ## Overview
@@ -32,7 +40,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 ###### Parameters
 
-+ api_key - The public beta key is "dc6zaTOxFJmzC"
++ api_key - The public beta key is <b>"dc6zaTOxFJmzC"</b>
 
 
 ## Search Endpoint
