@@ -15,7 +15,7 @@ If you would like to use Giphy API in production, please contact [api@giphy.com]
 
 - The app name with brief description, web / app store links, etc.
 
-- If this is a new app, do you have a go-live date? (it’s ok if you don't)
+- What is the 'live date' of the app or feature that integrates with the API?
 
 
 ## Overview
