@@ -7,10 +7,9 @@
 
 Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine.
 
-The Giphy API is open to the public. We have instituted a simple, single public beta key
-system to let anyone quickly hack and experiment with the API. 
+The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out.
 
-An API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key to develop your application and experiment with the API. 
+An API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key to develop your application and experiment. 
 
 If you would like to use Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) for a unique API key with the following information:
 
