@@ -9,11 +9,14 @@ Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_For
 
 The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key while you develop your application and experiment with your integrations.
 
-Once you are ready to use the Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key.  In your email please provide the following information:
+Once you are ready to use the Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. In your email please provide the following information:
 
 - The app name with brief description, web / app store links, etc.
 
 - What is the 'live date' of the app or feature that integrates with the API?
+
+- As per our [terms](http://giphy.com/terms) (see section 5a) we require all apps that use the Giphy API to display "Powered By Giphy" attribution marks. You can find an approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy_api_icons.zip). Please be sure to include a screen shot of your app that includes the attribution.
+
 
 
 ## Overview
