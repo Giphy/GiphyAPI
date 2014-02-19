@@ -15,7 +15,7 @@ Once you are ready to use the Giphy API in production, please contact [api@giphy
 
 - What is the 'live date' of the app or feature that integrates with the API?
 
-- As per our section 5 A of our [terms](http://giphy.com/terms), we require all apps that use the Giphy API to display "Powered By Giphy" attribution marks. You can find an approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy_api_icons.zip). Please be sure to include a screen shot of your app that includes the attribution.
+- As per our section 5 A of our [terms](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find an approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy_api_icons.zip). Please be sure to include a screen shot of your app that includes the attribution.
 
 
 
