@@ -19,7 +19,7 @@ Once you are ready to use the Giphy API in production, please contact [api@giphy
 
 - As per our section 5 A of our [terms](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy_api_icons.zip). Please be sure to include a screen shot of your app that includes the attribution.
 
-<b>Note: the public key is subject to rate limit constraints. We do not encourage live production deployments use the public key.</b>
+<b>Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.</b>
 
 
 ## Overview
