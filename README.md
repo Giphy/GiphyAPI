@@ -11,18 +11,15 @@ Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_For
 
 The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key while you develop your application and experiment with your integrations.
 
-Once you are ready to use the Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. <b>Please make the subject of your email "API Key Request".</b> This is important as it will help us keep track of your request. Also, in your email please provide the following information:
+Once you are ready to use the Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. <b>Please make the subject of your email "API Key Request".</b> This is important as it will help us keep track of your request. In the body of your email please provide the following:
 
-- The app name with brief description, web / app store links, etc.
+- Your app name with brief description, web / app store links, etc.  
 
-- What is the 'live date' of the app or feature that integrates with the API? 
+- What is the 'live date' of the app or feature that integrates with the API?  Briefly describe how the Giphy API integrates with your app, include any screenshots if it helps.
 
-- As per our section 5 A of our [terms](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy-api-icons.zip). 
-
-Please be sure to include a screen shot of your app that includes the attribution.  If you do not include an attribution screen shot you will be requested for them in a subsequent email so please try to include everything together and we'll make sure you are sorted out right away.
+- As per our section 5 A of our [terms of service](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy-api-icons.zip). In your email, please attach screenshot of your app that shows the attribution marks.  If you do not include them you will be requested for them so please include them in your initial request to expediate the process. 
 
 <b>Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.</b>
-
 
 ## Overview
 
