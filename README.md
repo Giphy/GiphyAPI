@@ -49,7 +49,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ignored. Use a plus or url encode for phrases. Example [paul+rudd](http://api.giphy.com/v1/gifs/search?q=paul+rudd&api_key=dc6zaTOxFJmzC), [ryan+gosling](http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC) or [american+psycho](http://api.giphy.com/v1/gifs/search?q=american+psycho&api_key=dc6zaTOxFJmzC). 
 
-	http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC	
+    http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC   
 
 [Example](http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=1&offset=0) search query.
 
@@ -143,19 +143,19 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 
 Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "feqkVgjJpYtjy"
 
-	http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC
+    http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC
 
 [Example](http://api.giphy.com/v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC) get GIF by id query
 
 ###### Path
 
-	/v1/gifs/<gif_id>
+    /v1/gifs/<gif_id>
 
 
 ### Sample Response, Get GIF by ID
 
-	{
-	    "data": {
+    {
+        "data": {
         type: "gif",
         id: "feqkVgjJpYtjy",
         url: "http://giphy.com/gifs/feqkVgjJpYtjy",
@@ -217,8 +217,8 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
         "meta": {
             "msg": "OK",
             "status": 200
-	    }
-	}
+        }
+    }
 
 
 ## Get GIFs by ID Endpoint
@@ -483,7 +483,7 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 
 ### Sample Response, Random
 
-	{
+    {
         data: {
             id: "h3Puw12S7F3LG",
             image_original_url: "http://s3.amazonaws.com/giphymedia/media/h3Puw12S7F3LG/giphy.gif",
@@ -518,7 +518,7 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
 
 ##### Parameters
 
-+ limit (optional) limits the number of results returned. 
++ limit (optional) limits the number of results returned. By default returns 25 results.
 
 
 ### Sample Response, Trending
@@ -527,67 +527,360 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
         data: [
             {
                 type: "gif",
-                id: "slNwi1TTwR40U",
-                url: "http://giphy.com/gifs/ticklin-ivories-slNwi1TTwR40U",
-                bitly_gif_url: "http://gph.is/1tByzZp",
-                bitly_url: "http://gph.is/1tByzZp",
-                embed_url: "http://giphy.com/embed/slNwi1TTwR40U",
+                id: "kBgD5qopuOZk4",
+                url: "http://giphy.com/gifs/kBgD5qopuOZk4",
+                bitly_gif_url: "http://gph.is/1vWnMi9",
+                bitly_url: "http://gph.is/1vWnMi9",
+                embed_url: "http://giphy.com/embed/kBgD5qopuOZk4",
                 username: "",
-                source: "http://www.reddit.com/r/gifs/comments/273ydw/ticklin_the_ivories/",
-                rating: "",
-                trending_datetime: "2014-06-02 14:56:53",
+                source: "http://ruinedchildhood.com/post/100283411891/icoulduseinsouciantmaybe-notean-magneto-and",
+                rating: "g",
+                caption: "",
+                content_url: "http://fhlostonsparadise.tumblr.com/post/20782429698",
+                import_datetime: "2014-10-18 01:25:16",
+                trending_datetime: "2014-10-28 18:52:00",
                 images: {
                     fixed_height: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200.gif",
-                        width: "356",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200.gif",
+                        width: "200",
                         height: "200",
-                        mp4: "http://media.giphy.com/media/slNwi1TTwR40U/200.mp4"
+                        mp4: "http://media.giphy.com/media/kBgD5qopuOZk4/200.mp4"
                     },
                     fixed_height_still: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200_s.gif",
-                        width: "356",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200_s.gif",
+                        width: "200",
                         height: "200"
                     },
                     fixed_height_downsampled: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200_d.gif",
-                        width: "356",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200_d.gif",
+                        width: "200",
                         height: "200"
                     },
                     fixed_width: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200w.gif",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200w.gif",
                         width: "200",
-                        height: "112",
-                        mp4: "http://media.giphy.com/media/slNwi1TTwR40U/200w.mp4"
+                        height: "200",
+                        mp4: "http://media.giphy.com/media/kBgD5qopuOZk4/200w.mp4"
                     },
                     fixed_width_still: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200w_s.gif",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200w_s.gif",
                         width: "200",
-                        height: "112"
+                        height: "200"
                     },
                     fixed_width_downsampled: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/200w_d.gif",
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/200w_d.gif",
                         width: "200",
-                        height: "112"
+                        height: "200"
+                    },
+                    downsized: {
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/giphy.gif",
+                        width: "245",
+                        height: "245",
+                        size: "1023297"
+                    },
+                    downsized_still: {
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/giphy_s.gif",
+                        width: "245",
+                        height: "245"
                     },
                     original: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/giphy.gif",
-                        width: "500",
-                        height: "281",
-                        size: "2033374",
-                        frames: "27",
-                        mp4: "http://media.giphy.com/media/slNwi1TTwR40U/giphy.mp4"
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/giphy.gif",
+                        width: "245",
+                        height: "245",
+                        size: "1023297",
+                        frames: "22",
+                        mp4: "http://media.giphy.com/media/kBgD5qopuOZk4/giphy.mp4"
                     },
                     original_still: {
-                        url: "http://media1.giphy.com/media/slNwi1TTwR40U/giphy_s.gif",
-                        width: "500",
-                        height: "281"
+                        url: "http://media1.giphy.com/media/kBgD5qopuOZk4/giphy_s.gif",
+                        width: "245",
+                        height: "245"
                     }
                 }
-            }
+            },
+            ... 24 more items here 
         ],
         pagination: {
-            total_count: 11034,
-            count: 1,
+            count: 25,
+            offset: 0
+        },
+        meta: {
+            status: 200,
+            msg: "OK"
+        }
+    }
+    
+    
+## GIPHY STICKER API 
+The Giphy API now provides endpoints that returns animated stickers (aka animated GIFs with transparent backgrounds).  Available endpoints:
+
+    - Sticker Search
+    - Sticker Roulette (random) 
+    - Sticker Trending
+    - Sticker Translate 
+
+### STICKER API PUBLIC KEY : dc6zaTOxFJmzC
+
+### STICKER Search Endpoint 
+
+Replicates the functionality and requirements of the classic Giphy search, but returns animated stickers rather than gifs. Example [cat](http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC)
+
+    http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC 
+###### Path
+
+    /v1/stickers/search
+
+###### Parameters
+
++ q - search query term or phrase
++ limit - (optional) number of results to return, maximum 100. Default 25
++ offset - (optional) results offset, defaults to 0
+
+###### Sample Response: Search
+    
+    {
+        "data": [
+            {
+                "type": "gif",
+                "id": "sj0sbNi9cv2dG",
+                "url": "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
+                "bitly_gif_url": "http://gph.is/Kq60z1",
+                "bitly_url": "http://gph.is/Kq60z1",
+                "embed_url": "http://giphy.com/embed/sj0sbNi9cv2dG",
+                "username": "",
+                "source": "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
+                "rating": "g",
+                "caption": "",
+                "content_url": "",
+                "import_datetime": "2014-01-04 15:39:18",
+                "trending_datetime": "1970-01-01 00:00:00",
+                "images": {
+                    "fixed_height": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200.gif",
+                        "width": "193",
+                        "height": "200",
+                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200.mp4"
+                    },
+                    "fixed_height_still": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_s.gif",
+                        "width": "193",
+                        "height": "200"
+                    },
+                    "fixed_height_downsampled": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_d.gif",
+                        "width": "193",
+                        "height": "200"
+                    },
+                    "fixed_width": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w.gif",
+                        "width": "200",
+                        "height": "207",
+                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200w.mp4"
+                    },
+                    "fixed_width_still": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_s.gif",
+                        "width": "200",
+                        "height": "207"
+                    },
+                    "fixed_width_downsampled": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_d.gif",
+                        "width": "200",
+                        "height": "207"
+                    },
+                    "downsized": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
+                        "width": "400",
+                        "height": "414",
+                        "size": "422870"
+                    },
+                    "downsized_still": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
+                        "width": "400",
+                        "height": "414"
+                    },
+                    "original": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
+                        "width": "400",
+                        "height": "414",
+                        "size": "422870",
+                        "frames": "39",
+                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/giphy.mp4"
+                    },
+                    "original_still": {
+                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
+                        "width": "400",
+                        "height": "414"
+                    }
+                }
+            },
+            ... 24 more items
+        ],
+        "meta": {
+            "status": 200,
+            "msg": "OK"
+        },
+        "pagination": {
+            "total_count": 573,
+            "count": 25,
+            "offset": 0
+        }
+    }
+    
+
+### STICKER Roulette (Random) Endpoint
+
+Returns a spotaneously selected sticker from Giphy's sticker collection. Optionally limit scope of result to a specific tag. Like the GIF random endpoint, Punctuation will be stripped and ignored. Use a hyphen for phrases. Example [oops](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops), [birthday](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=birthday) or [thank-you](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=whatever). Search terms should be URL encoded.
+    
+    http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops
+
+[Example](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC) random query.
+
+###### Path
+
+    /v1/sticker/random
+
+###### Parameters
+
++ q - search query term or phrase
+
+###### Sample Reponse: Random
+
+    {
+        "data": {
+            "type": "gif",
+            "id": "8yAVe11H5MzCg",
+            "url": "http://giphy.com/gifs/animatedtext-transparent-green-8yAVe11H5MzCg",
+            "image_original_url": "http://s3.amazonaws.com/giphymedia/media/8yAVe11H5MzCg/giphy.gif",
+            "image_url": "http://s3.amazonaws.com/giphymedia/media/8yAVe11H5MzCg/giphy.gif",
+            "image_mp4_url": "http://s3.amazonaws.com/giphymedia/media/8yAVe11H5MzCg/giphy.mp4",
+            "image_frames": "30",
+            "image_width": "503",
+            "image_height": "191",
+            "fixed_height_downsampled_url": "http://s3.amazonaws.com/giphymedia/media/8yAVe11H5MzCg/200_d.gif",
+            "fixed_height_downsampled_width": "527",
+            "fixed_height_downsampled_height": "200",
+            "fixed_width_downsampled_url": "http://s3.amazonaws.com/giphymedia/media/8yAVe11H5MzCg/200w_d.gif",
+            "fixed_width_downsampled_width": "200",
+            "fixed_width_downsampled_height": "76",
+            "rating": "pg-13",
+            "username": "animatedtext",
+            "caption": "requested by slightly-invisible",
+            "tags": [
+                "transparent",
+                "green",
+                "mom",
+                "yolo",
+                "oops"
+            ]
+        },
+        "meta": {
+            "status": 200,
+            "msg": "OK"
+        }
+    }
+
+### STICKER Trending Endpoint
+
+Get the latest stickers trending on Giphy with this endpoint.  
+
+    http://api.giphy.com/v1/stickers/trending?api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/stickers/trending?api_key=dc6zaTOxFJmzC&limit=4&fmt=html) trending query with html formatted response.
+
+[Example](http://api.giphy.com/v1/stickers/trending?api_key=dc6zaTOxFJmzC&limit=4) trending query with default json response.
+
+###### Path
+
+    /v1/stickers/trending
+
+###### Parameters
+
++ s - term or phrase to translate into a GIF
++ limit - (optional) number of results to return, maximum 100. Default: 25
++ offset - (optional) results offset, defaults to 0);
++ fmt - (optional) return results in html or json format.
++ rating - limit results to those rated G, PG, PG-13 or R. 
+
+###### Sample Response: Trending Stickers
+
+    {
+        data: [
+            {
+                type: "gif",
+                id: "c6MjvgBu55ahi",
+                url: "http://giphy.com/gifs/transparent-c6MjvgBu55ahi",
+                bitly_gif_url: "http://gph.is/1s5KDEN",
+                bitly_url: "http://gph.is/1s5KDEN",
+                embed_url: "http://giphy.com/embed/c6MjvgBu55ahi",
+                username: "",
+                source: "http://myspaceglitter.tumblr.com/post/53041962471",
+                rating: "pg",
+                caption: "",
+                content_url: "http://perhosia-vatsassa.tumblr.com/post/53038261647",
+                trending_datetime: "2014-09-12 19:06:52",
+                images: {
+                    fixed_height: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200.gif",
+                        width: "174",
+                        height: "200",
+                        mp4: "http://media.giphy.com/media/c6MjvgBu55ahi/200.mp4"
+                    },
+                    fixed_height_still: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200_s.gif",
+                        width: "174",
+                        height: "200"
+                    },
+                    fixed_height_downsampled: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200_d.gif",
+                        width: "174",
+                        height: "200"
+                    },
+                    fixed_width: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200w.gif",
+                        width: "200",
+                        height: "230",
+                        mp4: "http://media.giphy.com/media/c6MjvgBu55ahi/200w.mp4"
+                    },
+                    fixed_width_still: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200w_s.gif",
+                        width: "200",
+                        height: "230"
+                    },
+                    fixed_width_downsampled: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/200w_d.gif",
+                        width: "200",
+                        height: "230"
+                    },
+                    downsized: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/giphy.gif",
+                        width: "473",
+                        height: "544",
+                        size: "489315"
+                    },
+                    downsized_still: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/giphy_s.gif",
+                        width: "473",
+                        height: "544"
+                    },
+                    original: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/giphy.gif",
+                        width: "473",
+                        height: "544",
+                        size: "489315",
+                        frames: "4",
+                        mp4: "http://media.giphy.com/media/c6MjvgBu55ahi/giphy.mp4"
+                    },
+                    original_still: {
+                        url: "http://media2.giphy.com/media/c6MjvgBu55ahi/giphy_s.gif",
+                        width: "473",
+                        height: "544"
+                    }
+                }
+            },      
+            ... 24 more items
+        ],
+        pagination: {
+            count: 25,
             offset: 0
         },
         meta: {
@@ -596,10 +889,110 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
         }
     }
 
+### STICKER Translate Endpoint
+
+Using the same alogirithm as the GIF translate endpoint, the sticker translate endpoint turns words into stickers.
+
+    http://api.giphy.com/v1/stickers/translate?s=hungry&api_key=dc6zaTOxFJmzC
+
+[Example](http://api.giphy.com/v1/stickers/translate?s=hungry&api_key=dc6zaTOxFJmzC) translate query.
+
+
+###### Path
+
+    /v1/stickers/translate
+
+###### Parameters
+
++ s - term or phrase to translate into a gif
+
+###### Sample Response, Translate
+
+    {
+        "data": {
+            "type": "gif",
+            "id": "VgJ7V2O0voODm",
+            "url": "http://giphy.com/gifs/animated-gif-pixel-art-killscreen-VgJ7V2O0voODm",
+            "bitly_gif_url": "http://gph.is/1pDqEst",
+            "bitly_url": "http://gph.is/1pDqEst",
+            "embed_url": "http://giphy.com/embed/VgJ7V2O0voODm",
+            "username": "",
+            "source": "http://killscreen.tumblr.com/post/67476623758/via",
+            "rating": "g",
+            "caption": "",
+            "content_url": "",
+            "import_datetime": "2013-11-19 17:27:00",
+            "trending_datetime": "2014-09-16 18:13:33",
+            "images": {
+                "fixed_height": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200.gif",
+                    "width": "200",
+                    "height": "200",
+                    "mp4": "http://media.giphy.com/media/VgJ7V2O0voODm/200.mp4"
+                },
+                "fixed_height_still": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200_s.gif",
+                    "width": "200",
+                    "height": "200"
+                },
+                "fixed_height_downsampled": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200_d.gif",
+                    "width": "200",
+                    "height": "200"
+                },
+                "fixed_width": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200w.gif",
+                    "width": "200",
+                    "height": "200",
+                    "mp4": "http://media.giphy.com/media/VgJ7V2O0voODm/200w.mp4"
+                },
+                "fixed_width_still": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200w_s.gif",
+                    "width": "200",
+                    "height": "200"
+                },
+                "fixed_width_downsampled": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/200w_d.gif",
+                    "width": "200",
+                    "height": "200"
+                },
+                "downsized": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/giphy.gif",
+                    "width": "100",
+                    "height": "100",
+                    "size": "4518"
+                },
+                "downsized_still": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/giphy_s.gif",
+                    "width": "100",
+                    "height": "100"
+                },
+                "original": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/giphy.gif",
+                    "width": "100",
+                    "height": "100",
+                    "size": "4518",
+                    "frames": "6",
+                    "mp4": "http://media.giphy.com/media/VgJ7V2O0voODm/giphy.mp4"
+                },
+                "original_still": {
+                    "url": "http://media2.giphy.com/media/VgJ7V2O0voODm/giphy_s.gif",
+                    "width": "100",
+                    "height": "100"
+                }
+            }
+        },
+        "meta": {
+            "status": 200,
+            "msg": "OK"
+        }
+    }
+
+**Once you are ready to use the Giphy STICKER API in production**, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. Please make the subject of your email "Sticker API Key Request". This is important as it will help us keep track of your request. 
 
 ## Code Examples
 
-Below are code samples in Python, JavaScript, Ruby, PHP and the command line on connecting to the API to make a search query for ryan gosling.
+Below are code samples in Python, JavaScript, Ruby, PHP and the command line on connecting to the API to make a search query for "ryan gosling".
 
 
 #### Python scripting language
