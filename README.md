@@ -170,84 +170,84 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 ### Sample Response, Get GIF by ID
 
     {
-    "data": {
-        "type": "gif",
-        "id": "feqkVgjJpYtjy",
-        "url": "http://giphy.com/gifs/feqkVgjJpYtjy",
-        "bitly_gif_url": "http://gph.is/XJ200y",
-        "bitly_url": "http://gph.is/XJ200y",
-        "embed_url": "http://giphy.com/embed/feqkVgjJpYtjy",
-        "username": "",
-        "source": "http://littleanimalgifs.tumblr.com/post/17994517807",
-        "rating": "g",
-        "caption": "",
-        "content_url": "",
-        "import_datetime": "2013-03-21 04:03:08",
-        "trending_datetime": "2014-09-23 22:49:53",
-        "images": {
-            "fixed_height": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif",
-                "width": "445",
-                "height": "200",
-                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200.mp4"
-            },
-            "fixed_height_still": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
-                "width": "445",
-                "height": "200"
-            },
-            "fixed_height_downsampled": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
-                "width": "445",
-                "height": "200"
-            },
-            "fixed_width": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w.gif",
-                "width": "200",
-                "height": "90",
-                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200w.mp4"
-            },
-            "fixed_width_still": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
-                "width": "200",
-                "height": "90"
-            },
-            "fixed_width_downsampled": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
-                "width": "200",
-                "height": "90"
-            },
-            "downsized": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
-                "width": "334",
-                "height": "150",
-                "size": "511581"
-            },
-            "downsized_still": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
-                "width": "334",
-                "height": "150"
-            },
-            "original": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
-                "width": "334",
-                "height": "150",
-                "size": "511581",
-                "frames": "27",
-                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/giphy.mp4"
-            },
-            "original_still": {
-                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
-                "width": "334",
-                "height": "150"
+        "data": {
+            "type": "gif",
+            "id": "feqkVgjJpYtjy",
+            "url": "http://giphy.com/gifs/feqkVgjJpYtjy",
+            "bitly_gif_url": "http://gph.is/XJ200y",
+            "bitly_url": "http://gph.is/XJ200y",
+            "embed_url": "http://giphy.com/embed/feqkVgjJpYtjy",
+            "username": "",
+            "source": "http://littleanimalgifs.tumblr.com/post/17994517807",
+            "rating": "g",
+            "caption": "",
+            "content_url": "",
+            "import_datetime": "2013-03-21 04:03:08",
+            "trending_datetime": "2014-09-23 22:49:53",
+            "images": {
+                "fixed_height": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif",
+                    "width": "445",
+                    "height": "200",
+                    "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200.mp4"
+                },
+                "fixed_height_still": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
+                    "width": "445",
+                    "height": "200"
+                },
+                "fixed_height_downsampled": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
+                    "width": "445",
+                    "height": "200"
+                },
+                "fixed_width": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w.gif",
+                    "width": "200",
+                    "height": "90",
+                    "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200w.mp4"
+                },
+                "fixed_width_still": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
+                    "width": "200",
+                    "height": "90"
+                },
+                "fixed_width_downsampled": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
+                    "width": "200",
+                    "height": "90"
+                },
+                "downsized": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
+                    "width": "334",
+                    "height": "150",
+                    "size": "511581"
+                },
+                "downsized_still": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
+                    "width": "334",
+                    "height": "150"
+                },
+                "original": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
+                    "width": "334",
+                    "height": "150",
+                    "size": "511581",
+                    "frames": "27",
+                    "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/giphy.mp4"
+                },
+                "original_still": {
+                    "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
+                    "width": "334",
+                    "height": "150"
+                }
             }
+        },
+        "meta": {
+            "status": 200,
+            "msg": "OK"
         }
-    },
-    "meta": {
-        "status": 200,
-        "msg": "OK"
     }
-}
 
 
 ## Get GIFs by ID Endpoint
@@ -269,7 +269,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 ## Sample Response, Get GIFs by ID
 
     {
-            data: [
+        data: [
         {
             type: "gif",
             id: "feqkVgjJpYtjy",
