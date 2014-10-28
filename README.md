@@ -44,7 +44,6 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 + api_key - The public beta key is <b>"dc6zaTOxFJmzC"</b>
 
-
 ## Search Endpoint
 
 Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ignored. Use a plus or url encode for phrases. Example [paul+rudd](http://api.giphy.com/v1/gifs/search?q=paul+rudd&api_key=dc6zaTOxFJmzC), [ryan+gosling](http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC) or [american+psycho](http://api.giphy.com/v1/gifs/search?q=american+psycho&api_key=dc6zaTOxFJmzC). 
@@ -62,6 +61,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 + q - search query term or phrase
 + limit - (optional) number of results to return, maximum 100. Default 25.
 + offset - (optional) results offset, defaults to 0.
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ### Sample Response, Search
 
@@ -407,7 +407,7 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 
     http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
 
-[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC&limit=1) translate query.
+[Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC) translate query.
 
 
 ###### Path
@@ -417,6 +417,7 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 ###### Parameters
 
 + s - term or phrase to translate into a GIF
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ### Sample Response, Translate
 
@@ -517,6 +518,7 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 ###### Parameters
 
 + tag - the GIF tag to limit randomness by
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ### Sample Response, Random
 
@@ -568,7 +570,7 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
 ##### Parameters
 
 + limit (optional) limits the number of results returned. By default returns 25 results.
-
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ### Sample Response, Trending
 
@@ -686,6 +688,7 @@ Replicates the functionality and requirements of the classic Giphy search, but r
 + q - search query term or phrase
 + limit - (optional) number of results to return, maximum 100. Default 25
 + offset - (optional) results offset, defaults to 0
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ###### Sample Response: Search
     
@@ -850,7 +853,7 @@ Get the latest stickers trending on Giphy with this endpoint.
 + limit - (optional) number of results to return, maximum 100. Default: 25
 + offset - (optional) results offset, defaults to 0);
 + fmt - (optional) return results in html or json format.
-+ rating - limit results to those rated G, PG, PG-13 or R. 
++ rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ###### Sample Response: Trending Stickers
 
