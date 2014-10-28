@@ -68,73 +68,88 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
     {
         "data": [
             {
-                type: "gif",
-                id: "OzmIjVRDwM6as",
-                url: "http://giphy.com/gifs/OzmIjVRDwM6as",
-                bitly_gif_url: "http://gph.is/1oLbeor",
-                bitly_url: "http://gph.is/1oLbeor",
-                embed_url: "http://giphy.com/embed/OzmIjVRDwM6as",
-                username: "",
-                source: "http://www.tumblr.com",
-                rating: "g",
-                trending_datetime: "0000-00-00 00:00:00",
-                images: {
-                    fixed_height: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200.gif",
-                        width: "360",
-                        height: "200",
-                        mp4: "http://media.giphy.com/media/OzmIjVRDwM6as/200.mp4"
+                "type": "gif",
+                "id": "DFiwMapItOTh6",
+                "url": "http://giphy.com/gifs/funny-cat-DFiwMapItOTh6",
+                "bitly_gif_url": "http://gph.is/1aakRc4",
+                "bitly_url": "http://gph.is/1aakRc4",
+                "embed_url": "http://giphy.com/embed/DFiwMapItOTh6",
+                "username": "",
+                "source": "http://tumblr.com",
+                "rating": "g",
+                "caption": "",
+                "content_url": "",
+                "import_datetime": "2014-02-01 10:26:38",
+                "trending_datetime": "1970-01-01 00:00:00",
+                "images": {
+                    "fixed_height": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200.gif",
+                        "width": "302",
+                        "height": "200",
+                        "mp4": "http://media.giphy.com/media/DFiwMapItOTh6/200.mp4"
                     },
-                    fixed_height_still: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200_s.gif",
-                        width: "360",
-                        height: "200"
+                    "fixed_height_still": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200_s.gif",
+                        "width": "302",
+                        "height": "200"
                     },
-                    fixed_height_downsampled: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200_d.gif",
-                        width: "360",
-                        height: "200"
+                    "fixed_height_downsampled": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200_d.gif",
+                        "width": "302",
+                        "height": "200"
                     },
-                    fixed_width: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200w.gif",
-                        width: "200",
-                        height: "111",
-                        mp4: "http://media.giphy.com/media/OzmIjVRDwM6as/200w.mp4"
+                    "fixed_width": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200w.gif",
+                        "width": "200",
+                        "height": "132",
+                        "mp4": "http://media.giphy.com/media/DFiwMapItOTh6/200w.mp4"
                     },
-                    fixed_width_still: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200w_s.gif",
-                        width: "200",
-                        height: "111"
+                    "fixed_width_still": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200w_s.gif",
+                        "width": "200",
+                        "height": "132"
                     },
-                    fixed_width_downsampled: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/200w_d.gif",
-                        width: "200",
-                        height: "111"
+                    "fixed_width_downsampled": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/200w_d.gif",
+                        "width": "200",
+                        "height": "132"
                     },
-                    original: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/giphy.gif",
-                        width: "400",
-                        height: "222",
-                        size: "807648",
-                        frames: "23",
-                        mp4: "http://media.giphy.com/media/OzmIjVRDwM6as/giphy.mp4"
+                    "downsized": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/giphy.gif",
+                        "width": "245",
+                        "height": "162",
+                        "size": "653626"
                     },
-                    original_still: {
-                        url: "http://media4.giphy.com/media/OzmIjVRDwM6as/giphy_s.gif",
-                        width: "400",
-                        height: "222"
+                    "downsized_still": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/giphy_s.gif",
+                        "width": "245",
+                        "height": "162"
+                    },
+                    "original": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/giphy.gif",
+                        "width": "245",
+                        "height": "162",
+                        "size": "653626",
+                        "frames": "54",
+                        "mp4": "http://media.giphy.com/media/DFiwMapItOTh6/giphy.mp4"
+                    },
+                    "original_still": {
+                        "url": "http://media4.giphy.com/media/DFiwMapItOTh6/giphy_s.gif",
+                        "width": "245",
+                        "height": "162"
                     }
                 }
-            }
+            },
+            ... 24 more items
         ],
         "meta": {
-            "msg": "OK",
-            "status": 200
+            "status": 200,
+            "msg": "OK"
         },
         "pagination": {
-            "count": 1,
-            "offset": "0",
-            "total_count": 249
+            "total_count": 1947,
+            "count": 25,
+            "offset": 0
         }
     }
 
@@ -155,70 +170,84 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 ### Sample Response, Get GIF by ID
 
     {
-        "data": {
-        type: "gif",
-        id: "feqkVgjJpYtjy",
-        url: "http://giphy.com/gifs/feqkVgjJpYtjy",
-        bitly_gif_url: "http://gph.is/XJ200y",
-        bitly_url: "http://gph.is/XJ200y",
-        embed_url: "http://giphy.com/embed/feqkVgjJpYtjy",
-        username: "",
-        source: "http://littleanimalgifs.tumblr.com/post/17994517807",
-        rating: "g",
-        trending_datetime: "1970-01-01 00:00:00",
-        images: {
-            fixed_height: {
-                url: "http://media3.giphy.com/media/feqkVgjJpYtjy/200.gif",
-                width: "445",
-                height: "200",
-                mp4: "http://media.giphy.com/media/feqkVgjJpYtjy/200.mp4"
+    "data": {
+        "type": "gif",
+        "id": "feqkVgjJpYtjy",
+        "url": "http://giphy.com/gifs/feqkVgjJpYtjy",
+        "bitly_gif_url": "http://gph.is/XJ200y",
+        "bitly_url": "http://gph.is/XJ200y",
+        "embed_url": "http://giphy.com/embed/feqkVgjJpYtjy",
+        "username": "",
+        "source": "http://littleanimalgifs.tumblr.com/post/17994517807",
+        "rating": "g",
+        "caption": "",
+        "content_url": "",
+        "import_datetime": "2013-03-21 04:03:08",
+        "trending_datetime": "2014-09-23 22:49:53",
+        "images": {
+            "fixed_height": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif",
+                "width": "445",
+                "height": "200",
+                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200.mp4"
             },
-            fixed_height_still: {
-                url: "http://media0.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
-                width: "445",
-                height: "200"
+            "fixed_height_still": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_s.gif",
+                "width": "445",
+                "height": "200"
             },
-            fixed_height_downsampled: {
-                url: "http://media2.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
-                width: "445",
-                height: "200"
+            "fixed_height_downsampled": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200_d.gif",
+                "width": "445",
+                "height": "200"
             },
-            fixed_width: {
-                url: "http://media1.giphy.com/media/feqkVgjJpYtjy/200w.gif",
-                width: "200",
-                height: "90",
-                mp4: ""
+            "fixed_width": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w.gif",
+                "width": "200",
+                "height": "90",
+                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/200w.mp4"
             },
-            fixed_width_still: {
-                url: "http://media2.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
-                width: "200",
-                height: "90"
+            "fixed_width_still": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_s.gif",
+                "width": "200",
+                "height": "90"
             },
-            fixed_width_downsampled: {
-                url: "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
-                width: "200",
-                height: "90"
+            "fixed_width_downsampled": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/200w_d.gif",
+                "width": "200",
+                "height": "90"
             },
-            original: {
-                url: "http://media3.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
-                width: "334",
-                height: "150",
-                size: "511581",
-                frames: "27",
-                mp4: "http://media.giphy.com/media/feqkVgjJpYtjy/giphy.mp4"
+            "downsized": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
+                "width": "334",
+                "height": "150",
+                "size": "511581"
             },
-            original_still: {
-                url: "http://media1.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
-                width: "334",
-                height: "150"
+            "downsized_still": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
+                "width": "334",
+                "height": "150"
+            },
+            "original": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.gif",
+                "width": "334",
+                "height": "150",
+                "size": "511581",
+                "frames": "27",
+                "mp4": "http://media.giphy.com/media/feqkVgjJpYtjy/giphy.mp4"
+            },
+            "original_still": {
+                "url": "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
+                "width": "334",
+                "height": "150"
             }
         }
     },
-        "meta": {
-            "msg": "OK",
-            "status": 200
-        }
+    "meta": {
+        "status": 200,
+        "msg": "OK"
     }
+}
 
 
 ## Get GIFs by ID Endpoint
@@ -376,7 +405,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 This is prototype endpoint for using Giphy as a translation engine for a GIF dialect.  The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words and phrases to GIFs.  Use a plus or url encode for phrases.
 
-    http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC&limit=1
+    http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
 
 [Example](http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC&limit=1) translate query.
 
@@ -392,74 +421,82 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 ### Sample Response, Translate
 
     {
-        {
-            data: {
-                type: "gif",
-                id: "RohgV6lCAKMow",
-                url: "http://giphy.com/gifs/RohgV6lCAKMow",
-                bitly_gif_url: "http://gph.is/1bOXiU4",
-                bitly_url: "http://gph.is/1bOXiU4",
-                embed_url: "http://giphy.com/embed/RohgV6lCAKMow",
-                username: "",
-                source: "http://gggfunny.tumblr.com/post/67520459825",
-                rating: "g",
-                trending_datetime: "1970-01-01 00:00:00",
-                images: {
-                    fixed_height: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200.gif",
-                        width: "356",
-                        height: "200",
-                        mp4: "http://media.giphy.com/media/RohgV6lCAKMow/200.mp4"
-                    },
-                    fixed_height_still: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200_s.gif",
-                        width: "356",
-                        height: "200"
-                    },
-                    fixed_height_downsampled: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200_d.gif",
-                        width: "356",
-                        height: "200"
-                    },
-                    fixed_width: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200w.gif",
-                        width: "200",
-                        height: "113",
-                        mp4: "http://media.giphy.com/media/RohgV6lCAKMow/200w.mp4"
-                    },
-                    fixed_width_still: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200w_s.gif",
-                        width: "200",
-                        height: "113"
-                    },
-                    fixed_width_downsampled: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/200w_d.gif",
-                        width: "200",
-                        height: "113"
-                    },
-                    original: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/giphy.gif",
-                        width: "400",
-                        height: "225",
-                        size: "1647911",
-                        frames: "38",
-                        mp4: "http://media.giphy.com/media/RohgV6lCAKMow/giphy.mp4"
-                    },
-                    original_still: {
-                        url: "http://media3.giphy.com/media/RohgV6lCAKMow/giphy_s.gif",
-                        width: "400",
-                        height: "225"
-                    }
+        "data": {
+            "type": "gif",
+            "id": "FiBzv5FRE85PO",
+            "url": "http://giphy.com/gifs/superman-man-of-steel-FiBzv5FRE85PO",
+            "bitly_gif_url": "http://gph.is/19bNnce",
+            "bitly_url": "http://gph.is/19bNnce",
+            "embed_url": "http://giphy.com/embed/FiBzv5FRE85PO",
+            "username": "",
+            "source": "http://perezhilton.tumblr.com/post/52728801979/man-of-steel-sequel-already-greenlit-henry-cavill",
+            "rating": "g",
+            "caption": "",
+            "content_url": "",
+            "import_datetime": "2013-06-21 17:58:38",
+            "trending_datetime": "1970-01-01 00:00:00",
+            "images": {
+                "fixed_height": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200.gif",
+                    "width": "347",
+                    "height": "200",
+                    "mp4": "http://media.giphy.com/media/FiBzv5FRE85PO/200.mp4"
+                },
+                "fixed_height_still": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200_s.gif",
+                    "width": "347",
+                    "height": "200"
+                },
+                "fixed_height_downsampled": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200_d.gif",
+                    "width": "347",
+                    "height": "200"
+                },
+                "fixed_width": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200w.gif",
+                    "width": "200",
+                    "height": "115",
+                    "mp4": "http://media.giphy.com/media/FiBzv5FRE85PO/200w.mp4"
+                },
+                "fixed_width_still": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200w_s.gif",
+                    "width": "200",
+                    "height": "115"
+                },
+                "fixed_width_downsampled": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/200w_d.gif",
+                    "width": "200",
+                    "height": "115"
+                },
+                "downsized": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/giphy.gif",
+                    "width": "500",
+                    "height": "288",
+                    "size": "976762"
+                },
+                "downsized_still": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/giphy_s.gif",
+                    "width": "500",
+                    "height": "288"
+                },
+                "original": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/giphy.gif",
+                    "width": "500",
+                    "height": "288",
+                    "size": "976762",
+                    "frames": "16",
+                    "mp4": "http://media.giphy.com/media/FiBzv5FRE85PO/giphy.mp4"
+                },
+                "original_still": {
+                    "url": "http://media3.giphy.com/media/FiBzv5FRE85PO/giphy_s.gif",
+                    "width": "500",
+                    "height": "288"
                 }
-            },        
-        }, pagination: {
-            total_count: 2,
-            count: 2,
-            offset: 0
+            }
         },
-        meta: {
-            status: 200,
-            msg: "OK"
+        "meta": {
+            "status": 200,
+            "msg": "OK"
         }
     }
 
@@ -484,21 +521,33 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 ### Sample Response, Random
 
     {
-        data: {
-            id: "h3Puw12S7F3LG",
-            image_original_url: "http://s3.amazonaws.com/giphymedia/media/h3Puw12S7F3LG/giphy.gif",
-            image_url: "http://s3.amazonaws.com/giphymedia/media/h3Puw12S7F3LG/giphy.gif",
-            tags: [
-                "advice",
-                "american psycho",
+        "data": {
+            "type": "gif",
+            "id": "Ggjwvmqktuvf2",
+            "url": "http://giphy.com/gifs/american-psycho-christian-bale-Ggjwvmqktuvf2",
+            "image_original_url": "http://s3.amazonaws.com/giphymedia/media/Ggjwvmqktuvf2/giphy.gif",
+            "image_url": "http://s3.amazonaws.com/giphymedia/media/Ggjwvmqktuvf2/giphy.gif",
+            "image_mp4_url": "http://s3.amazonaws.com/giphymedia/media/Ggjwvmqktuvf2/giphy.mp4",
+            "image_frames": "11",
+            "image_width": "500",
+            "image_height": "256",
+            "fixed_height_downsampled_url": "http://s3.amazonaws.com/giphymedia/media/Ggjwvmqktuvf2/200_d.gif",
+            "fixed_height_downsampled_width": "391",
+            "fixed_height_downsampled_height": "200",
+            "fixed_width_downsampled_url": "http://s3.amazonaws.com/giphymedia/media/Ggjwvmqktuvf2/200w_d.gif",
+            "fixed_width_downsampled_width": "200",
+            "fixed_width_downsampled_height": "102",
+            "rating": "g",
+            "username": "",
+            "caption": "",
+            "tags": [
                 "christian bale",
-                "dating",
-                "mary harron"
+                "american psycho"
             ]
         },
-        meta: {
-            status: 200,
-            msg: "OK"
+        "meta": {
+            "status": 200,
+            "msg": "OK"
         }
     }
 
@@ -612,14 +661,16 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
     
     
 ## GIPHY STICKER API 
-The Giphy API now provides endpoints that returns animated stickers (aka animated GIFs with transparent backgrounds).  Available endpoints:
+The Giphy API that provide only animated stickers (aka animated GIFs with transparent backgrounds) in the responses. The available endpoints are as follows:
 
     - Sticker Search
-    - Sticker Roulette (random) 
+    - Sticker Roulette (Random) 
     - Sticker Trending
     - Sticker Translate 
 
-### STICKER API PUBLIC KEY : dc6zaTOxFJmzC
+### STICKER API PUBLIC KEY : dc6zaTOxFJmzC 
+
+Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.
 
 ### STICKER Search Endpoint 
 
