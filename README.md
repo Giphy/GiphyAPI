@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="logo_buildtext_white_forever.gif" width="330" alt="API Giphy logo"/>
+<img align="center" src="logo_buildtext_white_forever.gif" width="700" alt="API Giphy logo"/>
 </p>
 
 
