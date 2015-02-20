@@ -25,12 +25,12 @@ Once you are ready to use the Giphy API in production, please contact [api@giphy
 
 The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
 
-+ search
-+ GIF by id
-+ GIFs by id
-+ translate
-+ random 
-+ trending
++ [search](https://github.com/Giphy/GiphyAPI#search-endpoint)
++ [GIF by id](https://github.com/Giphy/GiphyAPI#get-gif-by-id-endpoint)
++ [GIFs by id](https://github.com/Giphy/GiphyAPI#get-gifs-by-id-endpoint)
++ [translate](https://github.com/Giphy/GiphyAPI#translate-endpoint)
++ [random](https://github.com/Giphy/GiphyAPI#random-endpoint)
++ [trending](https://github.com/Giphy/GiphyAPI#trending-gifs-endpoint)
 
 The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and random returns a single random GIF, optionally limited to a specified tag. Learn more about the rest in the documentation below.
 
