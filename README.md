@@ -17,7 +17,7 @@ Once you are ready to use the Giphy API in production, please contact [api@giphy
 
 - What is the 'live date' of the app or feature that integrates with the API?  Briefly describe how the Giphy API integrates with your app, include any screenshots if it helps.
 
-- As per our section 5 A of our [terms of service](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy-api-icons.zip). In your email, please attach screenshot of your app that shows the attribution marks.  If you do not include them you will be requested for them so please include them in your initial request to expediate the process. 
+- As per our section 5 A of our [terms of service](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy-attribution-marks.zip). In your email, please attach screenshot of your app that shows the attribution marks.  If you do not include them you will be requested for them so please include them in your initial request to expediate the process. 
 
 <b>Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.</b>
 
