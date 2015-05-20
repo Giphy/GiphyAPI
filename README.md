@@ -62,7 +62,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 + limit - (optional) number of results to return, maximum 100. Default 25.
 + offset - (optional) results offset, defaults to 0.
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Search
 
@@ -643,7 +643,7 @@ This is prototype endpoint for using Giphy as a translation engine for a GIF dia
 
 + s - term or phrase to translate into a GIF
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Translate
 
@@ -794,7 +794,7 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 
 + tag - the GIF tag to limit randomness by
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Random
 
@@ -848,7 +848,7 @@ Fetch GIFs currently trending online. The data returned mirrors that used to cre
 
 + limit (optional) limits the number of results returned. By default returns 25 results.
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Trending
 
@@ -1016,7 +1016,7 @@ Replicates the functionality and requirements of the classic Giphy search, but r
 + limit - (optional) number of results to return, maximum 100. Default 25
 + offset - (optional) results offset, defaults to 0
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ###### Sample Response: Search
     
@@ -1125,7 +1125,7 @@ Returns a spotaneously selected sticker from Giphy's sticker collection. Optiona
 
 + q - search query term or phrase
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ###### Sample Reponse: Random
 
@@ -1180,7 +1180,7 @@ Get the latest stickers trending on Giphy with this endpoint.
 + s - term or phrase to translate into a GIF
 + limit - (optional) number of results to return, maximum 100. Default: 25
 + offset - (optional) results offset, defaults to 0);
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
 
 ###### Sample Response: Trending Stickers
@@ -1338,7 +1338,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 
 + s - term or phrase to translate into a gif
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful fo viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ###### Sample Response, Translate
 
