@@ -9,18 +9,23 @@ Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_For
 
 ## Access and API Keys
 
-The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. <b>The public beta key is "dc6zaTOxFJmzC"</b>.  Please use this key while you develop your application and experiment with your integrations.
+#### Public Beta Key 
+The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. 
 
-Once you are ready to use the Giphy API in production, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. <b>Please make the subject of your email "API Key Request".</b> This is important as it will help us keep track of your request. In the body of your email please provide the following:
++ The public beta key is "dc6zaTOxFJmzC” 
+	
+Please use this key while you develop your application and experiment with your integrations. Note: the public key is subject to rate limit constraints and we do not encourage live production deployments to use the public key.
 
-- Your app name with brief description, web / app store links, etc.  
+#### Request a Production Key
+Once you’re ready to use the Giphy API in production, please visit api.giphy.com/submit to request a production API key. In your submission, please be prepared to provide the following:
 
-- What is the 'live date' of the app or feature that integrates with the API?  Briefly describe how the Giphy API integrates with your app, include any screenshots if it helps.
++ Your app name with brief description, web / app store links, etc.
 
-- As per our section 5 A of our [terms of service](http://giphy.com/terms), we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks. You can find approved [official logo marks here](http://giphymedia.s3.amazonaws.com/giphy-attribution-marks.zip). In your email, please attach screenshot of your app that shows the attribution marks.  If you do not include them you will be requested for them so please include them in your initial request to expediate the process. 
++ The 'live date' of the app and feature that integrates with the API. Briefly describe how the Giphy API integrates with your app and provide screenshots of the implementation.
 
-<b>Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.</b>
++ As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks here. Please provide screenshots of your attribution placement. 
 
+If you have any questions please feel free to contact us at api@giphy.com. Please submit API corrections via github issues. Please see our terms of service for any restrictions on using the service. We also recommend using the JSONview plugin for Firefox or Chrome to view the API responses in your browser. 
 ## Overview
 
 The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
@@ -1520,14 +1525,3 @@ Below are code samples in Python, JavaScript, Ruby, PHP and the command line on 
 ## Sharing and Promoting your Giphy API Project
 
 Projects that leverage the Giphy API can be submitted to [Giphy labs](http://giphy.com/labs). Learn more about [Giphy labs](http://giphy.com/labs).
-
-
-## Additional Information
-
-Please submit corrections via [github issues](https://github.com/giphy/GiphyAPI/issues). Please see the [terms](http://giphy.com/terms) for any restrictions on using 
-the service. 
-
-Note: the public beta key will be decommissioned at a point in the future. Usage in production is prohibited and not recommended. Developers seeking to leverage the Giphy API should contact [api@giphy.com](mailto:api@giphy.com) for a unique API key.
-
-We recommend the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en).
-
