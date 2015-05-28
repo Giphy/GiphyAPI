@@ -12,7 +12,7 @@ Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_For
 #### Public Beta Key 
 The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. 
 
-+ The public beta key is "dc6zaTOxFJmzC” 
++ <b>The public beta key is "dc6zaTOxFJmzC”</b> 
 	
 Please use this key while you develop your application and experiment with your integrations. Note: the public key is subject to rate limit constraints and we do not encourage live production deployments to use the public key.
 
