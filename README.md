@@ -26,6 +26,7 @@ Once you’re ready to use the Giphy API in production, please visit [api.giphy.
 + As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved [official logo marks here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA). Please provide screenshots of your attribution placement. 
 
 If you have any questions please feel free to contact us at [api@giphy.com](mailto:api@giphy.com). Please submit API corrections via [github issues](https://github.com/giphy/GiphyAPI/issues). Please see our [terms of service](http://giphy.com/terms) for any restrictions on using the service. We also recommend using the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) to view the API responses in your browser. 
+
 ## Overview
 
 The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
