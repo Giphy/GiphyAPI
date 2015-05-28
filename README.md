@@ -37,6 +37,7 @@ The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
 + translate
 + random 
 + trending
++ stickers (search, translate, random, trending)
 
 The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and random returns a single random GIF, optionally limited to a specified tag. Learn more about the rest in the documentation below.
 
