@@ -342,7 +342,7 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 					webp: "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy.webp",
 					webp_size: "270108"
 					},
-					original_still: {
+				original_still: {
 					url: "http://media0.giphy.com/media/feqkVgjJpYtjy/giphy_s.gif",
 					width: "334",
 					height: "150"
