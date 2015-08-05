@@ -1470,7 +1470,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 					width: "294",
 					height: "199"
 				}
-}        },
+        },
         "meta": {
             "status": 200,
             "msg": "OK"
