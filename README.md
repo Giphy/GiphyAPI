@@ -1486,36 +1486,44 @@ Below are code samples in Python, JavaScript, Ruby, PHP and the command line on 
 
 #### Python scripting language
 
-    # python
-    import urllib,json
-    data = json.loads(urllib.urlopen("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5").read())
-    print json.dumps(data, sort_keys=True, indent=4)
+```python
+# python
+import urllib,json
+data = json.loads(urllib.urlopen("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5").read())
+print json.dumps(data, sort_keys=True, indent=4)
+```
 
 
 #### JavaScript scripting language
 
-    #javascript, jQuery
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5");
-    xhr.done(function(data) { console.log("success got data", data); });
+```javascript
+#javascript, jQuery
+var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5");
+xhr.done(function(data) { console.log("success got data", data); });
+```
 
 
 #### Ruby scripting language
 
-    #ruby
-    require 'net/http'
-    require 'json'
-    url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5"
-    resp = Net::HTTP.get_response(URI.parse(url))
-    buffer = resp.body
-    result = JSON.parse(buffer) 
-    print result 
+```ruby
+#ruby
+require 'net/http'
+require 'json'
+url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5"
+resp = Net::HTTP.get_response(URI.parse(url))
+buffer = resp.body
+result = JSON.parse(buffer) 
+puts result 
+```
 
 
 #### PHP scripting language
 
-    // php
-    $url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5";
-    print_r(json_decode(file_get_contents($url)));
+```php
+// php
+$url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5";
+print_r(json_decode(file_get_contents($url)));
+```
 
 
 #### Command line, cURL
