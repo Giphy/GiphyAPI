@@ -39,7 +39,7 @@ The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
 + trending
 + stickers (search, translate, random, trending)
 
-The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps (e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut)). Trending pulls in the best GIFs from around the internet, updated every 15min and hand curated by the Giphy editorial team. Random returns a single random GIF, optionally limited to a specified tag. [Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
+The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps (e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut)). Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. Random returns a single random GIF, optionally limited to a specified tag. [Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
