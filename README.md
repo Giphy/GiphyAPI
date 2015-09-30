@@ -635,7 +635,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 ## Translate Endpoint
 
-The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words and phrases to GIFs. Example implementations of translate can be found in the Giphy [Slack](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut), [Hipchat](https://marketplace.atlassian.com/plugins/com.giphy.api.hipchat), [Wire](https://wire.com/news/giphy-say-it-with-gif), or [Dasher](https://dasher.im/). Use a plus or url encode for phrases.
+The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words and phrases to GIFs. Example implementations of translate can be found in the Giphy [Slack](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut), [Hipchat](https://marketplace.atlassian.com/plugins/com.giphy.api.hipchat), [Wire](https://wire.com/news/giphy-say-it-with-gif), or [Dasher](https://dasher.im/) integrations. Use a plus or url encode for phrases.
 
     http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
 
