@@ -39,9 +39,9 @@ The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
 + trending
 + stickers (search, translate, random, trending)
 
-The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate is an experimental endpoint designed to be used for GIF dialects and random returns a single random GIF, optionally limited to a specified tag. Learn more about the rest in the documentation below.
+The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps (e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut)). Trending pulls in the best GIFs from around the internet, updated every 15min and hand curated by the Giphy editorial team. Random returns a single random GIF, optionally limited to a specified tag. [Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
 
-The Giphy API implements a REST-like interface. Connections can be made with any HTTP enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
+The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
 ###### Host
 
@@ -635,7 +635,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 ## Translate Endpoint
 
-This is prototype endpoint for using Giphy as a translation engine for a GIF dialect.  The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words and phrases to GIFs.  Use a plus or url encode for phrases.
+The translate API draws on search, but uses the Giphy "special sauce" to handle translating from one vocabulary to another. In this case, words and phrases to GIFs. Example implementations of translate can be found in the Giphy [Slack](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut), [Hipchat](https://marketplace.atlassian.com/plugins/com.giphy.api.hipchat), [Wire](https://wire.com/news/giphy-say-it-with-gif), or [Dasher](https://dasher.im/). Use a plus or url encode for phrases.
 
     http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC
 
@@ -840,7 +840,7 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 
 ## Trending GIFs Endpoint
 
-Fetch GIFs currently trending online. The data returned mirrors that used to create [The Hot 100](http://giphy.com/hot100) list of GIFs on [Giphy](http://giphy.com). Returns 25 results by default.
+Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. The data returned mirrors the GIFs showcased on the [Giphy homepage](http://giphy.com). Returns 25 results by default.
 
     http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC
 
@@ -1170,7 +1170,7 @@ Returns a spotaneously selected sticker from Giphy's sticker collection. Optiona
 
 ### STICKER Trending Endpoint
 
-Get the latest stickers trending on Giphy with this endpoint.  
+Get the latest stickers trending on Giphy with this endpoint. Hand curated by the Giphy editorial team and refreshed daily.  
 
     http://api.giphy.com/v1/stickers/trending?api_key=dc6zaTOxFJmzC
 
@@ -1477,7 +1477,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
         }
     }
 
-**Once you are ready to use the Giphy STICKER API in production**, please contact [api@giphy.com](mailto:api@giphy.com) to request a unique API key. Please make the subject of your email "Sticker API Key Request". This is important as it will help us keep track of your request. 
+**Once you are ready to use the Giphy STICKER API in production**, please visit [api.giphy.com/submit](http://api.giphy.com/submit) to request a unique API key. As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks [here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA).
 
 ## Code Examples
 
