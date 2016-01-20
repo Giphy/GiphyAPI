@@ -5,7 +5,7 @@
 
 # Giphy API Documentation
 
-Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine.
+Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine with the largest library of GIFs.
 
 ## Access and API Keys
 
@@ -29,17 +29,26 @@ If you have any questions please feel free to contact us at [api@giphy.com](mail
 
 ## Overview
 
-The [Giphy API](http://api.giphy.com) provides the following JSON endpoints:
+The public [Giphy API](http://api.giphy.com) provides the following JSON read endpoints:
 
-+ search
+######READ ENDPOINTS
+
++ Search
 + GIF by id
 + GIFs by id
-+ translate
-+ random 
-+ trending
-+ stickers (search, translate, random, trending)
++ Translate
++ Random 
++ Trending
++ Stickers (search, translate, random, trending)
 
-The search endpoint replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps (e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut)). Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. Random returns a single random GIF, optionally limited to a specified tag. [Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
+
+Search replicates the search found on [Giphy](http://giphy.com). 
+Translate converts words and phrases to GIFs and is designed to be used in messaging apps (e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut)). 
+Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
+Random returns a single random GIF, optionally limited to a specified tag. 
+[Stickers](http://giphy.com/stickers) are a separate library of animated, transparent GIFs (great for [creation apps](http://giphy.com/create/gifcaption). 
+
+[Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
@@ -1478,6 +1487,8 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
     }
 
 **Once you are ready to use the Giphy STICKER API in production**, please visit [api.giphy.com/submit](http://api.giphy.com/submit) to request a unique API key. As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks [here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA).
+
+
 
 ## Code Examples
 
