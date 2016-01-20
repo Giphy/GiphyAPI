@@ -5,7 +5,7 @@
 
 # Giphy API Documentation
 
-Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine with the largest library of GIFs.
+Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine.
 
 ## Access and API Keys
 
