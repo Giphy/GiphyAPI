@@ -96,6 +96,8 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 				rating: "g",
 				caption: "",
 				content_url: "",
+				source_tld: "tumblr.com",
+				source_post_url: "http://tumblr.com",
 				import_datetime: "2014-01-18 09:14:20",
 				trending_datetime: "1970-01-01 00:00:00",
 				images: {
@@ -248,6 +250,8 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 			rating: "g",
 			caption: "",
 			content_url: "",
+			source_tld: "littleanimalgifs.tumblr.com",
+			source_post_url: "http://littleanimalgifs.tumblr.com/post/17994517807",
 			import_datetime: "2013-03-21 04:03:08",
 			trending_datetime: "2014-11-12 06:22:52",
 			images: {
@@ -397,6 +401,8 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 				rating: "g",
 				caption: "",
 				content_url: "",
+				source_tld: "littleanimalgifs.tumblr.com",
+				source_post_url: "http://littleanimalgifs.tumblr.com/post/17994517807",
 				import_datetime: "2013-03-21 04:03:08",
 				trending_datetime: "2014-11-12 06:22:52",
 				images: {
@@ -1135,13 +1141,13 @@ Returns a spotaneously selected sticker from Giphy's sticker collection. Optiona
 
 ###### Path
 
-    /v1/sticker/random
+    /v1/stickers/random
 
 ###### Parameters
 
-+ q - search query term or phrase
++ tag - search query term or phrase
 + rating - limit results to those rated (y,g, pg, pg-13 or r). 
-+ fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
++ fmt - (optional) return results in 'html' or 'json' format (useful for viewing responses as GIFs to debug/test)
 
 ###### Sample Reponse: Random
 
