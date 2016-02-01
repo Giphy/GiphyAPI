@@ -1047,6 +1047,7 @@ Note: the public key is subject to rate limit constraints. We do not encourage l
 Replicates the functionality and requirements of the classic Giphy search, but returns animated stickers rather than gifs. Example [cat](http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC)
 
     http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC 
+    
 ###### Path
 
     /v1/stickers/search
