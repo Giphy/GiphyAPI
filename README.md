@@ -87,6 +87,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
             {
             	type: "gif",
 				id: "FiGiRei2ICzzG",
+    		    slug: "funny-cat-FiGiRei2ICzzG",
 				url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
 				bitly_gif_url: "http://gph.is/1fIdLOl",
 				bitly_url: "http://gph.is/1fIdLOl",
@@ -241,6 +242,7 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
         "data": {
             type: "gif",
 			id: "feqkVgjJpYtjy",
+		    slug: "eyes-shocked-bird-feqkVgjJpYtjy",
 			url: "http://giphy.com/gifs/eyes-shocked-bird-feqkVgjJpYtjy",
 			bitly_gif_url: "http://gph.is/XJ200y",
 			bitly_url: "http://gph.is/XJ200y",
@@ -371,7 +373,7 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 
 ## Get GIFs by ID Endpoint
 
-A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkVgjJpYtjy and 7rzbxdu0ZEXLy
+A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkVgjJpYtjy and 7rzbxdu0ZEXLy.  Note the additional user metadata attached to the document that describes the second GIF in the response, 7rzbxdu0ZEXLy.
 
     http://api.giphy.com/v1/gifs?api_key=dc6zaTOxFJmzC&ids=feqkVgjJpYtjy,7rzbxdu0ZEXLy
 
@@ -392,6 +394,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
         	{
 				type: "gif",
 				id: "feqkVgjJpYtjy",
+		        slug: "eyes-shocked-bird-feqkVgjJpYtjy",
 				url: "http://giphy.com/gifs/eyes-shocked-bird-feqkVgjJpYtjy",
 				bitly_gif_url: "http://gph.is/XJ200y",
 				bitly_url: "http://gph.is/XJ200y",
@@ -516,6 +519,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 			{
 				type: "gif",
 				id: "7rzbxdu0ZEXLy",
+   		        slug: "mrdiv-art-mrdiv-disco-ball-7rzbxdu0ZEXLy",
 				url: "http://giphy.com/gifs/mrdiv-art-mrdiv-disco-ball-7rzbxdu0ZEXLy",
 				bitly_gif_url: "http://gph.is/13YkU2y",
 				bitly_url: "http://gph.is/13YkU2y",
@@ -525,6 +529,15 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 				rating: "g",
 				caption: "",
 				content_url: "",
+				user: {
+			        avatar_url: "https://media3.giphy.com/avatars/mrdiv.gif",
+			        banner_url: "",
+			        profile_url: "https://giphy.com/mrdiv/",
+			        username: "mrdiv",
+			        display_name: "mr. div"
+			      },
+		      	source_tld: "mrdiv.tumblr.com",
+		        source_post_url: "http://mrdiv.tumblr.com/post/48618427039/disco-sphere",
 				import_datetime: "2013-06-18 11:30:02",
 				trending_datetime: "1970-01-01 00:00:00",
 				images: {
@@ -673,6 +686,7 @@ The translate API draws on search, but uses the Giphy "special sauce" to handle 
         "data": {
             type: "gif",
 			id: "wWAIKcFASEFz2",
+		    slug: "superman-santa-chandler-bing-wWAIKcFASEFz2",
 			url: "http://giphy.com/gifs/superman-santa-chandler-bing-wWAIKcFASEFz2",
 			bitly_gif_url: "http://gph.is/XMD6gE",
 			bitly_url: "http://gph.is/XMD6gE",
@@ -682,6 +696,8 @@ The translate API draws on search, but uses the Giphy "special sauce" to handle 
 			rating: "g",
 			caption: "",
 			content_url: "",
+			source_tld: "daytripperrevolution.tumblr.com",
+    		source_post_url: "http://daytripperrevolution.tumblr.com/post/13729531842",
 			import_datetime: "2013-03-24 17:48:35",
 			trending_datetime: "1970-01-01 00:00:00",
 			images: {
@@ -879,6 +895,7 @@ Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. 
             {
             type: "gif",
 			id: "op7uqYWBm3R04",
+			slug: "food-krush-groove-the-fat-boys-op7uqYWBm3R04",
 			url: "http://giphy.com/gifs/food-krush-groove-the-fat-boys-op7uqYWBm3R04",
 			bitly_gif_url: "http://gph.is/1FupHza",
 			bitly_url: "http://gph.is/1FupHza",
@@ -888,6 +905,8 @@ Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. 
 			rating: "y",
 			caption: "",
 			content_url: "",
+		    source_tld: "televandalist.com",
+    		source_post_url: "http://televandalist.com/post/104471085874",
 			import_datetime: "2014-12-06 06:21:55",
 			trending_datetime: "2015-04-01 16:05:01",
 			images: {
@@ -1047,6 +1066,7 @@ Replicates the functionality and requirements of the classic Giphy search, but r
             {
                 "type": "gif",
                 "id": "sj0sbNi9cv2dG",
+                "slug": "cat-transparent-sj0sbNi9cv2dG",
                 "url": "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
                 "bitly_gif_url": "http://gph.is/Kq60z1",
                 "bitly_url": "http://gph.is/Kq60z1",
@@ -1056,6 +1076,8 @@ Replicates the functionality and requirements of the classic Giphy search, but r
                 "rating": "g",
                 "caption": "",
                 "content_url": "",
+                "source_tld": "www.tumblr.com",
+      			"source_post_url": "http://www.tumblr.com",
                 "import_datetime": "2014-01-04 15:39:18",
                 "trending_datetime": "1970-01-01 00:00:00",
                 "images": {
@@ -1212,6 +1234,7 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
             {
             	type: "gif",
 				id: "sj0sbNi9cv2dG",
+				slug: "cat-transparent-sj0sbNi9cv2dG",
 				url: "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
 				bitly_gif_url: "http://gph.is/Kq60z1",
 				bitly_url: "http://gph.is/Kq60z1",
@@ -1221,6 +1244,8 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
 				rating: "g",
 				caption: "",
 				content_url: "",
+		      	source_tld: "ibehhvinny.tumblr.com",
+      			source_post_url: "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
 				import_datetime: "2014-01-04 15:39:18",
 				trending_datetime: "1970-01-01 00:00:00",
 				images: {
@@ -1368,6 +1393,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
         "data": {
             type: "gif",
 			id: "11eZCNibwDFx6w",
+			slug: "11eZCNibwDFx6w",
 			url: "http://giphy.com/gifs/11eZCNibwDFx6w",
 			bitly_gif_url: "http://gph.is/1ptYDDI",
 			bitly_url: "http://gph.is/1ptYDDI",
@@ -1377,6 +1403,8 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 			rating: "g",
 			caption: "",
 			content_url: "",
+			source_tld: "gifbay.com",
+    		source_post_url: "http://www.gifbay.com/gif/here_take_this-123255/",
 			import_datetime: "2014-03-25 00:52:20",
 			trending_datetime: "2015-01-08 16:09:46",
 			images: {
