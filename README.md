@@ -1523,7 +1523,24 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 
 **Once you are ready to use the Giphy STICKER API in production**, please visit [api.giphy.com/submit](http://api.giphy.com/submit) to request a unique API key. As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks [here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA).
 
+## Rendition Guide
 
++ <b>fixed_height</b> - Height set to 200px. Good for mobile use.
++ <b>fixed_height_still</b> - Static preview image for fixed_height
++ <b>fixed_height_downsampled</b> - Height set to 200px. Reduced to 6 frames to minimize file size to the lowest. Works well for unlimited scroll on mobile and as animated previews. See Giphy.com on mobile web as an example.
++ <b>fixed_width</b> - Width set to 200px. Good for mobile use.
++ <b>fixed_width_still</b> - Static preview image for fixed_width
++ <b>fixed_width_downsampled</b> - Width set to 200px. Reduced to 6 frames. Works well for unlimited scroll on mobile and as animated previews.
++ <b>fixed_height_small</b> - Height set to 100px. Good for mobile keyboards.
++ <b>fixed_height_small_still</b> - Static preview image for fixed_height_small
++ <b>fixed_width_small</b> - Width set to 100px. Good for mobile keyboards
++ <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
++ <b>downsized</b> - File size under 1.5mb. 
++ <b>downsized_still</b> - Static preview image for downsized
++ <b>downsized_medium</b> - File size under 5mb. 
++ <b>downsized_large</b> - File size under 8mb. 
++ <b>original</b> - Original file size and file dimensions. Good for desktop use.
++ <b>original_still</b> - Preview image for original
 
 ## Code Examples
 
