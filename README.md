@@ -39,11 +39,14 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read en
 + Translate
 + Random 
 + Trending
-+ Stickers (search, translate, random, trending)
++ Stickers
+	+ Search
+	+ Translate
+	+ Random
+	+ Trending
 
 
-Search replicates the search found on [Giphy](http://giphy.com). 
-Translate converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
+Search replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
 Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
 Random returns a single random GIF, optionally limited to a specified tag. 
 [Stickers](http://giphy.com/stickers) are a separate library of animated, transparent GIFs (great for [creation apps](http://giphy.com/create/gifcaption)!). 
