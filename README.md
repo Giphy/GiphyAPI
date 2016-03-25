@@ -33,17 +33,17 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read en
 
 ######READ ENDPOINTS
 
-+ Search
-+ GIF by id
-+ GIFs by id
-+ Translate
-+ Random 
-+ Trending
-+ Stickers
-	+ Search
-	+ Translate
-	+ Random
-	+ Trending
++ [Search](#search-endpoint)
++ [GIF by id](#get-gif-by-id-endpoint)
++ [GIFs by id](#get-gifs-by-id-endpoint)
++ [Translate](#translate-endpoint)
++ [Random](#random-endpoint)
++ [Trending](#trending-gifs-endpoint)
++ [Stickers](#giphy-sticker-api)
+	+ [Search](#sticker-search-endpoint)	
+	+ [Random](#sticker-roulette-random-endpoint)
+	+ [Trending](#sticker-trending-endpoint)
+	+ [Translate](#sticker-translate-endpoint)
 
 
 Search replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
