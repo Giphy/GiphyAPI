@@ -29,31 +29,35 @@ If you have any questions please feel free to contact us at [api@giphy.com](mail
 
 ## Overview
 
-The public [Giphy API](http://api.giphy.com) provides the following JSON read endpoints:
+The public [Giphy API](http://api.giphy.com) provides the following JSON read and write endpoint(s):
 
 ######READ ENDPOINTS
 
-+ Search
-+ GIF by id
-+ GIFs by id
-+ Translate
-+ Random 
-+ Trending
-+ Stickers
-	+ Search
-	+ Translate
-	+ Random
-	+ Trending
++ [Search](#search-endpoint)
++ [GIF by id](#get-gif-by-id-endpoint)
++ [GIFs by id](#get-gifs-by-id-endpoint)
++ [Translate](#translate-endpoint)
++ [Random](#random-endpoint)
++ [Trending](#trending-gifs-endpoint)
++ [Stickers](#giphy-sticker-api)
+ 	+ [Search](#sticker-search-endpoint)	
+ 	+ [Random](#sticker-roulette-random-endpoint)
+ 	+ [Trending](#sticker-trending-endpoint)
+ 	+ [Translate](#sticker-translate-endpoint)
 
+######WRITE ENDPOINT
+
++ [Upload](#upload-api)
+
+The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
 Search replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
 Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
 Random returns a single random GIF, optionally limited to a specified tag. 
-[Stickers](http://giphy.com/stickers) are a separate library of animated, transparent GIFs (great for [creation apps](http://giphy.com/create/gifcaption)!). 
+[Stickers](http://giphy.com/stickers) are a separate library of animated, transparent GIFs (great for [creation apps](http://giphy.com/create/gifcaption)!). The Upload endpoint allows you to upload your content to Giphy.
 
 [Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
 
-The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
 
 ###### Host
 
@@ -1526,25 +1530,6 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 
 **Once you are ready to use the Giphy STICKER API in production**, please visit [api.giphy.com/submit](http://api.giphy.com/submit) to request a unique API key. As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks [here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA).
 
-## Rendition Guide
-
-+ <b>fixed_height</b> - Height set to 200px. Good for mobile use.
-+ <b>fixed_height_still</b> - Static preview image for fixed_height
-+ <b>fixed_height_downsampled</b> - Height set to 200px. Reduced to 6 frames to minimize file size to the lowest. Works well for unlimited scroll on mobile and as animated previews. See Giphy.com on mobile web as an example.
-+ <b>fixed_width</b> - Width set to 200px. Good for mobile use.
-+ <b>fixed_width_still</b> - Static preview image for fixed_width
-+ <b>fixed_width_downsampled</b> - Width set to 200px. Reduced to 6 frames. Works well for unlimited scroll on mobile and as animated previews.
-+ <b>fixed_height_small</b> - Height set to 100px. Good for mobile keyboards.
-+ <b>fixed_height_small_still</b> - Static preview image for fixed_height_small
-+ <b>fixed_width_small</b> - Width set to 100px. Good for mobile keyboards
-+ <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
-+ <b>downsized</b> - File size under 1.5mb. 
-+ <b>downsized_still</b> - Static preview image for downsized
-+ <b>downsized_medium</b> - File size under 5mb. 
-+ <b>downsized_large</b> - File size under 8mb. 
-+ <b>original</b> - Original file size and file dimensions. Good for desktop use.
-+ <b>original_still</b> - Preview image for original
-
 ## Code Examples
 
 Below are code samples in Python, JavaScript, Ruby, PHP and the command line on connecting to the API to make a search query for "ryan gosling".
@@ -1596,8 +1581,102 @@ print_r(json_decode(file_get_contents($url)));
 
     # curl, command line
     curl "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5"
+    
+## Rendition Guide
 
++ <b>fixed_height</b> - Height set to 200px. Good for mobile use.
++ <b>fixed_height_still</b> - Static preview image for fixed_height
++ <b>fixed_height_downsampled</b> - Height set to 200px. Reduced to 6 frames to minimize file size to the lowest. Works well for unlimited scroll on mobile and as animated previews. See Giphy.com on mobile web as an example.
++ <b>fixed_width</b> - Width set to 200px. Good for mobile use.
++ <b>fixed_width_still</b> - Static preview image for fixed_width
++ <b>fixed_width_downsampled</b> - Width set to 200px. Reduced to 6 frames. Works well for unlimited scroll on mobile and as animated previews.
++ <b>fixed_height_small</b> - Height set to 100px. Good for mobile keyboards.
++ <b>fixed_height_small_still</b> - Static preview image for fixed_height_small
++ <b>fixed_width_small</b> - Width set to 100px. Good for mobile keyboards
++ <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
++ <b>downsized</b> - File size under 1.5mb. 
++ <b>downsized_still</b> - Static preview image for downsized
++ <b>downsized_medium</b> - File size under 5mb. 
++ <b>downsized_large</b> - File size under 8mb. 
++ <b>original</b> - Original file size and file dimensions. Good for desktop use.
++ <b>original_still</b> - Preview image for original
 
+## Upload API
+
+#### Public Beta Key
+The Giphy Upload API is open to the public. The same public beta key can be used to test out the endpoint.
+
++ <b>The public beta key is "dc6zaTOxFJmzC”</b>
+
+Please note that the beta key will only allow you to upload content and retrieve the hosted Giphy GIF ID in the response. If you wish to upload directly to your existing or new Giphy Channel (example: giphy.com/channel/test), please see details below in <b>Request an Upload Production Key</b>. Please use this beta key while you develop your application and experiment with your integrations. The public key is subject to rate limit constraints and we do not encourage live production deployments to use the public key.
+
+#### Request an Upload Production Key
+
+Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
+
+Once your Channel is created, please include the Channel username (example: For giphy.com/community/test, your username is test) in your submission using the same [Giphy API submission form](https://github.com/giphy/Giphyapi#request-a-production-key). You will be prompted to submit your Giphy Channel username once you select "Upload" as your type of application. <b>Please be prepared to provide all the following information detailed in the submission form.</b>
+
+Please note that production keys are currently limited to 1000 uploads per day. If you need to extend that, please send us a note in the submission form.
+
+## Overview
+
+The Giphy Upload API allows you to upload and host your content programmatically to Giphy.com. We accept animated gifs or video files up to 100MB. Hosted Giphy URLs are supported and play on every major social network. 
+
+The following documentation describes how to upload animated GIFs or videos to Giphy.com using the API. If you're using the beta key, you will not need to include a Giphy channel username to your request. Only approved apps will need to include a Giphy channel username. You can use the endpoint to upload your content, attach tags and other meta tag in a single HTTP or HTTPS POST request.
+
+#### Upload Endpoint
+
+######path 
+	Host: upload.giphy.com
+	URI: /v1/gifs
+	Type: POST
+
+######parameters
++ api_key : your private API key (string, required)
++ username : your assigned username (string, required for approved apps only) 
++ file : the animated GIF or video file (local file resource, required if no source_image_url supplied)
++ source_image_url : the URL for the image or video you wish to upload (string, required if no file parameter specified)
++ tags : comma delimited list of tags (string, optional)
++ source_post_url : the source of the asset (string, optional)
+	
+The only three fields that are required are api_key, username and the file <b>OR</b> source_image_url.  If both file & source_image_url form fields are supplied in the request, <b>the file parameter will be used over the source_image_url</b>. 
+
+#### Upload Code Examples
+	
+###### cURL example upload using a file parameter:
+	
+	curl -v -F "username=yourusername" -F "file=@/Some/path/to/giphy.gif"  -F "api_key=YOUR_API_KEY" -F "tags=tag1,tag2,tag3" -F "source_post_url=http://your.source-url.tld" "http://upload.giphy.com/v1/gifs"
+
+###### cURL example upload using a source_image_url as a source:
+
+	curl -v -F "username=yourusername" -F "source_image_url=http://domain.com/public/path/to/giphy.gif"  -F "api_key=YOUR_API_KEY" -F "tags=tag1,tag2,tag3" -F "source_post_url=http://your.source-url.tld" "http://upload.giphy.com/v1/gifs"
+
+###### JavaScript example
+	$.ajax({
+        type: 'POST',
+        url: 'http://upload.giphy.com/v1/gifs',
+        data: {
+            username: YOUR_USERNAME,
+            api_key: YOUR_KEY,
+            file: YOUR_FILE,
+            source_image_url: YOUR_SOURCE_URL,
+            tags: YOUR_TAGS
+        },
+        success: YOUR_SUCCESS_HANDLER,
+        error: YOUR_ERROR_HANDLER
+    });  
+
+#### Upload request response format
+
+Successful upload requests will result in a JSON response with a <b>200</b> status code:
+
+	{"meta":{"gif_id":"your_new_gif_id","status":200,"msg":"OK"}}
+	
+Failed responses return a JSON response with a <b>400</b> error code):
+
+	{"meta":{"status":400,"msg":"Forbidden"}}  // bad API KEY
+	
+	{"meta":{"status":400,"msg":"Bad Request - Error creating GIF"}} // attempting to upload a file that's not a valid animated GIF	   
 ## Sharing and Promoting your Giphy API Project
 
 Projects that leverage the Giphy API can be submitted to [Giphy labs](http://giphy.com/labs). Learn more about [Giphy labs](http://giphy.com/labs).
