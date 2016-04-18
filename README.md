@@ -1594,7 +1594,7 @@ print_r(json_decode(file_get_contents($url)));
 + <b>fixed_height_small_still</b> - Static preview image for fixed_height_small
 + <b>fixed_width_small</b> - Width set to 100px. Good for mobile keyboards
 + <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
-+ <b>downsized</b> - File size under 1.5mb. 
++ <b>downsized</b> - File size under 2mb. 
 + <b>downsized_still</b> - Static preview image for downsized
 + <b>downsized_medium</b> - File size under 5mb. 
 + <b>downsized_large</b> - File size under 8mb. 
