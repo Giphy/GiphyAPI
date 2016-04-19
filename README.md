@@ -49,7 +49,7 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read an
 
 + [Upload](#upload-api)
 
-The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain.
+The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain. The Giphy API provides multiple file sizes, dimensions, and formats of every GIF to meet every clients potential needs. You can view a [guide to the rendition offering here](https://github.com/giphy/Giphyapi#rendition-guide).
 
 Search replicates the search found on [Giphy](http://giphy.com). Translate converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
 Trending pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
