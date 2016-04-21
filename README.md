@@ -1638,8 +1638,9 @@ The following documentation describes how to upload animated GIFs or videos to G
 + source_image_url : the URL for the image or video you wish to upload (string, required if no file parameter specified)
 + tags : comma delimited list of tags (string, optional)
 + source_post_url : the source of the asset (string, optional)
++ is_hidden : true (boolean, optional)
 	
-The only three fields that are required are api_key, username and the file <b>OR</b> source_image_url.  If both file & source_image_url form fields are supplied in the request, <b>the file parameter will be used over the source_image_url</b>. 
+The only three fields that are required are api_key, username and the file <b>OR</b> source_image_url.  If both file & source_image_url form fields are supplied in the request, <b>the file parameter will be used over the source_image_url</b>. The is_hidden parameter allows you to mark your uploaded content as private (only visible on giphy.com if logged in as the associated user)
 
 #### Upload Code Examples
 	
