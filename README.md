@@ -1229,7 +1229,6 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
 
 ###### Parameters
 
-+ s - term or phrase to translate into a GIF
 + limit - (optional) number of results to return, maximum 100. Default: 25
 + offset - (optional) results offset, defaults to 0);
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
