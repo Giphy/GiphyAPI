@@ -1670,13 +1670,13 @@ The only three fields that are required are api_key, username and the file <b>OR
 
 Successful upload requests will result in a JSON response with a <b>200</b> status code:
 
-	{"meta":{"gif_id":"your_new_gif_id","status":200,"msg":"OK"}}
+	{"data":{"id":"your_new_gif_id"},"meta":{"status":200,"msg":"OK"}}
 	
 Failed responses return a JSON response with a <b>400</b> error code):
 
-	{"meta":{"status":400,"msg":"Forbidden"}}  // bad API KEY
+	{"meta":{"status":403,"msg":"Forbidden"}}  // bad API KEY
 	
-	{"meta":{"status":400,"msg":"Bad Request - Error creating GIF"}} // attempting to upload a file that's not a valid animated GIF	   
+	{"meta":{"status":403,"msg":"Bad Request - Error creating GIF"}} // attempting to upload a file that's not a valid animated GIF	   
 ## Sharing and Promoting your Giphy API Project
 
 Projects that leverage the Giphy API can be submitted to [Giphy labs](http://giphy.com/labs). Learn more about [Giphy labs](http://giphy.com/labs).
