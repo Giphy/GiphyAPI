@@ -1611,7 +1611,7 @@ Please note that the beta key will only allow you to upload content and retrieve
 
 #### Request an Upload Production Key
 
-Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
+Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](http://www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
 
 Once your Channel is created, please include the Channel username (example: For giphy.com/community/test, your username is test) in your submission using the same [Giphy API submission form](https://github.com/giphy/Giphyapi#request-a-production-key). You will be prompted to submit your Giphy Channel username once you select "Upload" as your type of application. <b>Please be prepared to provide all the following information detailed in the submission form.</b>
 
