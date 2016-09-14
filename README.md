@@ -48,7 +48,9 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read an
 
 + [Upload](#upload-api)
 
-GIPHY's GIF libary is the largest in the world and includes millions of original GIFs directly from the world's best [content partners](http://giphy.com/partners), original [GIF artists](http://giphy.com/artists), as well as the best GIFs from across the entire internet. GIPHY's APIs make it dead simple for developers to incorporate this vast library right inside of their apps to deliver highly interactive content that is proven to increase daily engagement across all types of apps, inclucing messaging, chat, dating, creation, community, and more.
+GIPHY's GIF libary is the largest in the world and includes millions of original GIFs directly from the world's best [content partners](http://giphy.com/partners), original [GIF artists](http://giphy.com/artists), as well as the best GIFs from across the entire internet. GIPHY's APIs make it dead simple for developers to incorporate this vast library right inside of their apps to deliver highly interactive content that is proven to increase daily engagement across all types of apps; messaging, chat, dating, creation, community, and more.
+
+[Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain. The Giphy API provides multiple file sizes, dimensions, and formats of every GIF to meet every clients potential needs. You can view a [guide to the rendition offering here](https://github.com/giphy/Giphyapi#rendition-guide).
 
@@ -65,9 +67,6 @@ Other features include:
 + <b>Optimized renditions</b> for mobile to deliver GIFs that load fast and consume less bandwidth - see rendition guide [here](#rendition-guide)
 + <b>MP4s and Webps</b> of every GIF!
 + <b>MPAA rating filters</b> supported across all endpoints
-
-[Giphy Labs](http://giphy.com/labs) is a great place to see various implementations of the Giphy API. Learn more about the rest in the documentation below.
-
 
 ###### Host
 
