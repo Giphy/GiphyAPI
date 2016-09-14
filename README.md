@@ -48,7 +48,7 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read an
 
 + [Upload](#upload-api)
 
-GIPHY's APIs helps developers drive a daily use–case around visual expression in messaging, chat, creation and community apps of all kinds. GIPHY's GIF libary is the largest in the world and includes millions of original GIFs from the world's best [content partners](http://giphy.com/partners) and original [GIF artists](http://giphy.com/artists), as well as the best GIFs from across the entire internet from the birth of the GIF format. 
+GIPHY's GIF libary is the largest in the world and includes millions of original GIFs directly from the world's best [content partners](http://giphy.com/partners), original [GIF artists](http://giphy.com/artists), as well as the best GIFs from across the entire internet. GIPHY's APIs make it dead simple for developers to incorporate this vast library right inside of their apps to deliver highly interactive content that is proven to increase daily engagement across all types of apps, inclucing messaging, chat, dating, creation, community, and more.
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain. The Giphy API provides multiple file sizes, dimensions, and formats of every GIF to meet every clients potential needs. You can view a [guide to the rendition offering here](https://github.com/giphy/Giphyapi#rendition-guide).
 
@@ -56,7 +56,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 + <b>Translate</b> converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
 + <b>Trending</b> pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
 + <b>Random</b> returns a single random GIF, optionally limited to a specified tag. 
-+ <b>Stickers</b> are a separate library of animated, transparent GIFs; great for [creation apps](http://giphy.com/create/gifcaption) and [iOS10 iMessage apps](http://www-benji.giphy.com/posts/the-giphy-for-imessage-extension-is-here)! You can also view them on the web by visiting [giphy.com/stickers](http://giphy.com/stickers). 
++ <b>Stickers</b> are a separate library of animated, transparent GIFs; great for [creation apps](http://giphy.com/create/gifcaption) and [iOS10 iMessage apps](http://giphy.com/posts/the-giphy-for-imessage-extension-is-here)! You can also view them on the web by visiting [giphy.com/stickers](http://giphy.com/stickers). 
 + <b>Upload</b> allows you to upload your content programatically to Giphy!
 
 Other features include:
