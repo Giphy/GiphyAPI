@@ -1626,7 +1626,7 @@ The GIPHY API offers language support across the Search and Translate APIs.
 
 [Example](http://api.giphy.com/v1/gifs/search?q=amor&api_key=dc6zaTOxFJmzC&lang=es) search query.
 
-###### Parameters
+###### Parameter
 
 + lang - specify default country for regional content; format is 2-letter ISO 639-1 country code
 
