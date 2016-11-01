@@ -1609,13 +1609,15 @@ print_r(json_decode(file_get_contents($url)));
 + <b>fixed_height_small_still</b> - Static preview image for fixed_height_small
 + <b>fixed_width_small</b> - Width set to 100px. Good for mobile keyboards
 + <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
++ <b>preview</b> - File size under 50kb. Duration may be truncated to meet file size requirements. Good for thumbnails and previews.
++ <b>downsized_small</b> - File size under 200kb.
 + <b>downsized</b> - File size under 2mb. 
-+ <b>downsized_still</b> - Static preview image for downsized
 + <b>downsized_medium</b> - File size under 5mb. 
 + <b>downsized_large</b> - File size under 8mb. 
++ <b>downsized_still</b> - Static preview image for downsized
 + <b>original</b> - Original file size and file dimensions. Good for desktop use.
 + <b>original_still</b> - Preview image for original
-
++ <b>looping</b> - Duration set to loop for 15 seconds. Only recommended for this exact use case. 
 
 ## Language Support
 
