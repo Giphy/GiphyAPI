@@ -63,7 +63,7 @@ The Giphy API implements a REST-like interface. Connections can be made with any
 
 Other features include:
 + <b>😎  Emoji support</b> across Search, Translate, and Random endpoints!
-+ <b>Language support</b> for 30+ languages - see langauge documentation [here](#language-support)
++ <b>Language support</b> for 30+ languages - see language documentation [here](#language-support)
 + <b>Optimized renditions</b> for mobile to deliver GIFs that load fast and consume less bandwidth - see rendition guide [here](#rendition-guide)
 + <b>MP4s and Webps</b> of every GIF!
 + <b>MPAA rating filters</b> supported across all endpoints
@@ -94,7 +94,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 + limit - (optional) number of results to return, maximum 100. Default 25.
 + offset - (optional) results offset, defaults to 0.
 + rating - (optional) limit results to those rated (y,g, pg, pg-13 or r).
-+ lang - (optional) specify default country for regional content; format is 2-letter ISO 639-1 country code. See list of supported langauges [here](#language-support)
++ lang - (optional) specify default country for regional content; format is 2-letter ISO 639-1 country code. See list of supported languages [here](#language-support)
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Search
