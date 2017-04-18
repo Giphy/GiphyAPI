@@ -30,7 +30,7 @@ If you have any questions please feel free to contact us at [api@giphy.com](mail
 
 The public [Giphy API](http://api.giphy.com) provides the following JSON read and write endpoint(s):
 
-######READ ENDPOINTS
+###### READ ENDPOINTS
 
 + [Search](#search-endpoint)
 + [Trending](#trending-gifs-endpoint)
@@ -44,7 +44,7 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read an
  	+ [Translate](#sticker-translate-endpoint)
  	+ [Random](#sticker-roulette-random-endpoint)
 
-######WRITE ENDPOINT
+###### WRITE ENDPOINT
 
 + [Upload](#upload-api)
 
@@ -1690,12 +1690,12 @@ The following documentation describes how to upload animated GIFs or videos to G
 
 #### Upload Endpoint
 
-######path 
+###### path 
 	Host: upload.giphy.com
 	URI: /v1/gifs
 	Type: POST
 
-######parameters
+###### parameters
 + api_key : your private API key (string, required)
 + username : your assigned username (string, required for approved apps only) 
 + file : the animated GIF or video file (local file resource, required if no source_image_url supplied)
