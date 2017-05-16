@@ -96,6 +96,7 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 + rating - (optional) limit results to those rated (y,g, pg, pg-13 or r).
 + lang - (optional) specify default country for regional content; format is 2-letter ISO 639-1 country code. See list of supported languages [here](#language-support)
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
++ sort - (optional) the sort order of the results returned (recent | relevant)
 
 ### Sample Response, Search
 
@@ -1492,7 +1493,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 
 ### STICKER Roulette (Random) Endpoint
 
-Returns a spotaneously selected sticker from Giphy's sticker collection. Optionally limit scope of result to a specific tag. Like the GIF random endpoint, Punctuation will be stripped and ignored. Use a hyphen for phrases. Example [oops](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops), [birthday](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=birthday) or [thank-you](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=whatever). Search terms should be URL encoded.
+Returns a spotaneously selected sticker from Giphy's sticker collection. Optionally limit scope of result to a specific tag. Like the GIF random endpoint, Punctuation will be stripped and ignored. Use a hyphen for phrases. Example [oops](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops), [birthday](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=birthday) or [thank-you](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=thank+you). Search terms should be URL encoded.
     
     http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops
 
@@ -1676,7 +1677,7 @@ Please note that the beta key will only allow you to upload content and retrieve
 
 #### Request an Upload Production Key
 
-Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
+Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](https://www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
 
 Once your Channel is created, please include the Channel username (example: For giphy.com/community/test, your username is test) in your submission using the same [Giphy API submission form](https://github.com/giphy/Giphyapi#request-a-production-key). You will be prompted to submit your Giphy Channel username once you select "Upload" as your type of application. <b>Please be prepared to provide all the following information detailed in the submission form.</b>
 
