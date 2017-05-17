@@ -1591,7 +1591,16 @@ puts result
 $url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5";
 print_r(json_decode(file_get_contents($url)));
 ```
+#### Java - Giphy4J
 
+The [Giphy4J](https://github.com/keshrath/Giphy4J) Java library for the Giphy API.
+
+```java
+// java
+Giphy giphy = new Giphy(API_KEY);
+SearchFeed feed = giphy.search("ryan gosling", 5, 0);
+feed.getDataList().get(0).getImages().getOriginal().getUrl();
+```
 
 #### Command line, cURL
 
