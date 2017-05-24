@@ -8,11 +8,11 @@ Giphy is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_For
 
 ## Access and API Keys
 
-#### Public Beta Key 
-The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints. 
+#### Public Beta Key
+The Giphy API is open to the public. We have instituted a simple, single public beta key system to let anyone try it out. The API key is required for all endpoints.
 
-+ <b>The public beta key is "dc6zaTOxFJmzC”</b> 
-	
++ <b>The public beta key is "dc6zaTOxFJmzC”</b>
+
 Please use this key while you develop your application and experiment with your integrations. Note: the public key is subject to rate limit constraints and we do not encourage live production deployments to use the public key.
 
 #### Request a Production Key
@@ -22,9 +22,9 @@ Once you’re ready to use the Giphy API in production, please visit [api.giphy.
 
 + The 'live date' of the app and feature that integrates with the API. Briefly describe how the Giphy API integrates with your app and provide screenshots of the implementation.
 
-+ As per our section 5 A of our terms of service, <b>we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized.</b> You can find approved [official logo marks here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA). Please provide screenshots of your attribution placement. 
++ As per our section 5 A of our terms of service, <b>we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized.</b> You can find approved [official logo marks here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA). Please provide screenshots of your attribution placement.
 
-If you have any questions please feel free to contact us at [api@giphy.com](mailto:api@giphy.com). Please submit API corrections via [github issues](https://github.com/giphy/GiphyAPI/issues). Please see our [terms of service](http://giphy.com/terms) for any restrictions on using the service. We also recommend using the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) to view the API responses in your browser. 
+If you have any questions please feel free to contact us at [api@giphy.com](mailto:api@giphy.com). Please submit API corrections via [github issues](https://github.com/giphy/GiphyAPI/issues). Please see our [terms of service](http://giphy.com/terms) for any restrictions on using the service. We also recommend using the JSONview plugin for [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/) or [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) to view the API responses in your browser.
 
 ## Overview
 
@@ -39,7 +39,7 @@ The public [Giphy API](http://api.giphy.com) provides the following JSON read an
 + [GIF by id](#get-gif-by-id-endpoint)
 + [GIFs by id](#get-gifs-by-id-endpoint)
 + [Stickers](#giphy-sticker-api)
- 	+ [Search](#sticker-search-endpoint)	
+ 	+ [Search](#sticker-search-endpoint)
  	+ [Trending](#sticker-trending-endpoint)
  	+ [Translate](#sticker-translate-endpoint)
  	+ [Random](#sticker-roulette-random-endpoint)
@@ -54,11 +54,11 @@ GIPHY's GIF libary is the largest in the world and includes millions of original
 
 The Giphy API implements a REST-like interface. Connections can be made with any HTTP or HTTPS enabled programming language. The Giphy API also implements [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), allowing you to connect to Giphy from JavaScript / Web browsers on your own domain. The Giphy API provides multiple file sizes, dimensions, and formats of every GIF to meet every clients potential needs. You can view a [guide to the rendition offering here](https://github.com/giphy/Giphyapi#rendition-guide).
 
-+ <b>Search</b> replicates the search found on [Giphy](http://giphy.com). 
-+ <b>Translate</b> converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut). 
-+ <b>Trending</b> pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team. 
-+ <b>Random</b> returns a single random GIF, optionally limited to a specified tag. 
-+ <b>Stickers</b> are a separate library of animated, transparent GIFs; great for [creation apps](http://giphy.com/create/gifcaption) and [iOS10 iMessage apps](http://giphy.com/posts/the-giphy-for-imessage-extension-is-here)! You can also view them on the web by visiting [giphy.com/stickers](http://giphy.com/stickers). 
++ <b>Search</b> replicates the search found on [Giphy](http://giphy.com).
++ <b>Translate</b> converts words and phrases to GIFs and is designed to be used in messaging apps, e.g. the [Giphy Slack integration](http://giphy.com/posts/slack-adds-giphy-to-every-chatroom-wut).
++ <b>Trending</b> pulls in the best GIFs from around the internet, hand curated by the Giphy editorial team.
++ <b>Random</b> returns a single random GIF, optionally limited to a specified tag.
++ <b>Stickers</b> are a separate library of animated, transparent GIFs; great for [creation apps](http://giphy.com/create/gifcaption) and [iOS10 iMessage apps](http://giphy.com/posts/the-giphy-for-imessage-extension-is-here)! You can also view them on the web by visiting [giphy.com/stickers](http://giphy.com/stickers).
 + <b>Upload</b> allows you to upload your content programatically to Giphy!
 
 Other features include:
@@ -78,7 +78,7 @@ Other features include:
 
 ## Search Endpoint
 
-Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ignored. Use a plus or url encode for phrases. Example [paul+rudd](http://api.giphy.com/v1/gifs/search?q=paul+rudd&api_key=dc6zaTOxFJmzC), [ryan+gosling](http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC) or [american+psycho](http://api.giphy.com/v1/gifs/search?q=american+psycho&api_key=dc6zaTOxFJmzC). 
+Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ignored. Use a plus or url encode for phrases. Example [paul+rudd](http://api.giphy.com/v1/gifs/search?q=paul+rudd&api_key=dc6zaTOxFJmzC), [ryan+gosling](http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC) or [american+psycho](http://api.giphy.com/v1/gifs/search?q=american+psycho&api_key=dc6zaTOxFJmzC).
 
     http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC   
 
@@ -100,12 +100,12 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 
 ### Sample Response, Search
 
-    {
-        "data": [
-            {
-            	type: "gif",
+	{
+		"data": [
+			{
+				type: "gif",
 				id: "FiGiRei2ICzzG",
-    		    slug: "funny-cat-FiGiRei2ICzzG",
+				slug: "funny-cat-FiGiRei2ICzzG",
 				url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
 				bitly_gif_url: "http://gph.is/1fIdLOl",
 				bitly_url: "http://gph.is/1fIdLOl",
@@ -226,19 +226,19 @@ Search all Giphy GIFs for a word or phrase. Punctuation will be stripped and ign
 						height: "176"
 					}
 				}
-            },
-            ... 24 more items
-        ],
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        },
-        "pagination": {
-            "total_count": 1947,
-            "count": 25,
-            "offset": 0
-        }
-    }
+			},
+			... 24 more items
+		],
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		},
+		"pagination": {
+			"total_count": 1947,
+			"count": 25,
+			"offset": 0
+		}
+	}
 
 ## Trending GIFs Endpoint
 
@@ -256,15 +256,15 @@ Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. 
 ##### Parameters
 
 + limit (optional) limits the number of results returned. By default returns 25 results.
-+ rating - limit results to those rated (y,g, pg, pg-13 or r). 
++ rating - limit results to those rated (y,g, pg, pg-13 or r).
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Trending
 
-    {
-        data: [
-            {
-            type: "gif",
+	{
+		data: [
+			{
+			type: "gif",
 			id: "op7uqYWBm3R04",
 			slug: "food-krush-groove-the-fat-boys-op7uqYWBm3R04",
 			url: "http://giphy.com/gifs/food-krush-groove-the-fat-boys-op7uqYWBm3R04",
@@ -276,8 +276,8 @@ Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. 
 			rating: "y",
 			caption: "",
 			content_url: "",
-		    source_tld: "televandalist.com",
-    		source_post_url: "http://televandalist.com/post/104471085874",
+			source_tld: "televandalist.com",
+			source_post_url: "http://televandalist.com/post/104471085874",
 			import_datetime: "2014-12-06 06:21:55",
 			trending_datetime: "2015-04-01 16:05:01",
 			images: {
@@ -387,18 +387,18 @@ Fetch GIFs currently trending online. Hand curated by the Giphy editorial team. 
 						height: "222"
 					}
 				}
-             },
-            ... 24 more items here 
-        ],
-        pagination: {
-            count: 25,
-            offset: 0
-        },
-        meta: {
-            status: 200,
-            msg: "OK"
-        }
-    }
+			},
+			... 24 more items here
+		],
+		pagination: {
+			count: 25,
+			offset: 0
+		},
+		meta: {
+			status: 200,
+			msg: "OK"
+		}
+	}
 
 
 ## Translate Endpoint
@@ -423,11 +423,11 @@ The translate API draws on search, but uses the Giphy "special sauce" to handle 
 
 ### Sample Response, Translate
 
-    {
-        "data": {
-            type: "gif",
+	{
+		"data": {
+			type: "gif",
 			id: "wWAIKcFASEFz2",
-		    slug: "superman-santa-chandler-bing-wWAIKcFASEFz2",
+			slug: "superman-santa-chandler-bing-wWAIKcFASEFz2",
 			url: "http://giphy.com/gifs/superman-santa-chandler-bing-wWAIKcFASEFz2",
 			bitly_gif_url: "http://gph.is/XMD6gE",
 			bitly_url: "http://gph.is/XMD6gE",
@@ -438,7 +438,7 @@ The translate API draws on search, but uses the Giphy "special sauce" to handle 
 			caption: "",
 			content_url: "",
 			source_tld: "daytripperrevolution.tumblr.com",
-    		source_post_url: "http://daytripperrevolution.tumblr.com/post/13729531842",
+			source_post_url: "http://daytripperrevolution.tumblr.com/post/13729531842",
 			import_datetime: "2013-03-24 17:48:35",
 			trending_datetime: "1970-01-01 00:00:00",
 			images: {
@@ -547,13 +547,13 @@ The translate API draws on search, but uses the Giphy "special sauce" to handle 
 					width: "500",
 					height: "279"
 				}
-			}        
+			}
 		},
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        }
-    }
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		}
+	}
 
 
 ## Random Endpoint
@@ -572,13 +572,13 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 ###### Parameters
 
 + tag - the GIF tag to limit randomness by
-+ rating - limit results to those rated (y,g, pg, pg-13 or r). 
++ rating - limit results to those rated (y,g, pg, pg-13 or r).
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response, Random
 
-    {
-        "data": {
+	{
+		"data": {
 			type: "gif",
 			id: "Ggjwvmqktuvf2",
 			url: "http://giphy.com/gifs/american-psycho-christian-bale-Ggjwvmqktuvf2",
@@ -601,13 +601,13 @@ Returns a random GIF, limited by tag. Excluding the tag parameter will return a 
 			fixed_width_small_url: "http://s3.amazonaws.com/giphygifs/media/Ggjwvmqktuvf2/100w.gif",
 			fixed_width_small_still_url: "http://s3.amazonaws.com/giphygifs/media/Ggjwvmqktuvf2/100w_s.gif",
 			fixed_width_small_width: "100",
-			fixed_width_small_height: "51"                 
-        },
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        }
-    }
+			fixed_width_small_height: "51"
+		},
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		}
+	}
 
 
 ## Get GIF by ID Endpoint
@@ -625,11 +625,11 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 
 ### Sample Response, Get GIF by ID
 
-    {
-        "data": {
-            type: "gif",
+	{
+		"data": {
+			type: "gif",
 			id: "feqkVgjJpYtjy",
-		    slug: "eyes-shocked-bird-feqkVgjJpYtjy",
+			slug: "eyes-shocked-bird-feqkVgjJpYtjy",
 			url: "http://giphy.com/gifs/eyes-shocked-bird-feqkVgjJpYtjy",
 			bitly_gif_url: "http://gph.is/XJ200y",
 			bitly_url: "http://gph.is/XJ200y",
@@ -750,12 +750,12 @@ Returns meta data about a GIF, by GIF id. In the below example, the GIF ID is "f
 					height: "150"
 				}
 			}  
-        },
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        }
-    }
+		},
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		}
+	}
 
 
 ## Get GIFs by ID Endpoint
@@ -776,12 +776,12 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 
 ### Sample Response, Get GIFs by ID
 
-    {
-        data: [
-        	{
+	{
+		data: [
+			{
 				type: "gif",
 				id: "feqkVgjJpYtjy",
-		        slug: "eyes-shocked-bird-feqkVgjJpYtjy",
+				slug: "eyes-shocked-bird-feqkVgjJpYtjy",
 				url: "http://giphy.com/gifs/eyes-shocked-bird-feqkVgjJpYtjy",
 				bitly_gif_url: "http://gph.is/XJ200y",
 				bitly_url: "http://gph.is/XJ200y",
@@ -906,7 +906,7 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 			{
 				type: "gif",
 				id: "7rzbxdu0ZEXLy",
-   		        slug: "mrdiv-art-mrdiv-disco-ball-7rzbxdu0ZEXLy",
+				slug: "mrdiv-art-mrdiv-disco-ball-7rzbxdu0ZEXLy",
 				url: "http://giphy.com/gifs/mrdiv-art-mrdiv-disco-ball-7rzbxdu0ZEXLy",
 				bitly_gif_url: "http://gph.is/13YkU2y",
 				bitly_url: "http://gph.is/13YkU2y",
@@ -917,14 +917,14 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 				caption: "",
 				content_url: "",
 				user: {
-			        avatar_url: "https://media3.giphy.com/avatars/mrdiv.gif",
-			        banner_url: "",
-			        profile_url: "https://giphy.com/mrdiv/",
-			        username: "mrdiv",
-			        display_name: "mr. div"
-			      },
-		      	source_tld: "mrdiv.tumblr.com",
-		        source_post_url: "http://mrdiv.tumblr.com/post/48618427039/disco-sphere",
+					avatar_url: "https://media3.giphy.com/avatars/mrdiv.gif",
+					banner_url: "",
+					profile_url: "https://giphy.com/mrdiv/",
+					username: "mrdiv",
+					display_name: "mr. div"
+				},
+				source_tld: "mrdiv.tumblr.com",
+				source_post_url: "http://mrdiv.tumblr.com/post/48618427039/disco-sphere",
 				import_datetime: "2013-06-18 11:30:02",
 				trending_datetime: "1970-01-01 00:00:00",
 				images: {
@@ -1035,39 +1035,39 @@ A multiget version of the get GIF by ID endpoint. In this case the IDs are feqkV
 					}
 				}
 			}
-        ],
-        "meta": {
-            "msg": "OK",
-            "status": 200
-        },
-        "pagination": {
-            "count": 2,
-            "offset": 0,
-            "total_count": 2
-        }
-    }
+		],
+		"meta": {
+			"msg": "OK",
+			"status": 200
+		},
+		"pagination": {
+			"count": 2,
+			"offset": 0,
+			"total_count": 2
+		}
+	}
 
 
-    
-    
-## GIPHY STICKER API 
+
+
+## GIPHY STICKER API
 The Giphy API that provide only animated stickers (aka animated GIFs with transparent backgrounds) in the responses. The available endpoints are as follows:
 
     - Sticker Search
-    - Sticker Roulette (Random) 
+    - Sticker Roulette (Random)
     - Sticker Trending
-    - Sticker Translate 
+    - Sticker Translate
 
-### STICKER API PUBLIC KEY : dc6zaTOxFJmzC 
+### STICKER API PUBLIC KEY : dc6zaTOxFJmzC
 
 Note: the public key is subject to rate limit constraints. We do not encourage live production deployments to use the public key.
 
-### STICKER Search Endpoint 
+### STICKER Search Endpoint
 
 Replicates the functionality and requirements of the classic Giphy search, but returns animated stickers rather than gifs. Example [cat](http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC)
 
-    http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC 
-    
+    http://api.giphy.com/v1/stickers/search?q=cat&api_key=dc6zaTOxFJmzC
+
 ###### Path
 
     /v1/stickers/search
@@ -1082,98 +1082,98 @@ Replicates the functionality and requirements of the classic Giphy search, but r
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
 
 ### Sample Response: Search
-    
-    {
-        "data": [
-            {
-                "type": "gif",
-                "id": "sj0sbNi9cv2dG",
-                "slug": "cat-transparent-sj0sbNi9cv2dG",
-                "url": "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
-                "bitly_gif_url": "http://gph.is/Kq60z1",
-                "bitly_url": "http://gph.is/Kq60z1",
-                "embed_url": "http://giphy.com/embed/sj0sbNi9cv2dG",
-                "username": "",
-                "source": "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
-                "rating": "g",
-                "caption": "",
-                "content_url": "",
-                "source_tld": "www.tumblr.com",
-      			"source_post_url": "http://www.tumblr.com",
-                "import_datetime": "2014-01-04 15:39:18",
-                "trending_datetime": "1970-01-01 00:00:00",
-                "images": {
-                    "fixed_height": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200.gif",
-                        "width": "193",
-                        "height": "200",
-                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200.mp4"
-                    },
-                    "fixed_height_still": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_s.gif",
-                        "width": "193",
-                        "height": "200"
-                    },
-                    "fixed_height_downsampled": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_d.gif",
-                        "width": "193",
-                        "height": "200"
-                    },
-                    "fixed_width": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w.gif",
-                        "width": "200",
-                        "height": "207",
-                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200w.mp4"
-                    },
-                    "fixed_width_still": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_s.gif",
-                        "width": "200",
-                        "height": "207"
-                    },
-                    "fixed_width_downsampled": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_d.gif",
-                        "width": "200",
-                        "height": "207"
-                    },
-                    "downsized": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
-                        "width": "400",
-                        "height": "414",
-                        "size": "422870"
-                    },
-                    "downsized_still": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
-                        "width": "400",
-                        "height": "414"
-                    },
-                    "original": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
-                        "width": "400",
-                        "height": "414",
-                        "size": "422870",
-                        "frames": "39",
-                        "mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/giphy.mp4"
-                    },
-                    "original_still": {
-                        "url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
-                        "width": "400",
-                        "height": "414"
-                    }
-                }
-            },
-            ... 24 more items
-        ],
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        },
-        "pagination": {
-            "total_count": 573,
-            "count": 25,
-            "offset": 0
-        }
-    }
-    
+
+	{
+		"data": [
+			{
+				"type": "gif",
+				"id": "sj0sbNi9cv2dG",
+				"slug": "cat-transparent-sj0sbNi9cv2dG",
+				"url": "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
+				"bitly_gif_url": "http://gph.is/Kq60z1",
+				"bitly_url": "http://gph.is/Kq60z1",
+				"embed_url": "http://giphy.com/embed/sj0sbNi9cv2dG",
+				"username": "",
+				"source": "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
+				"rating": "g",
+				"caption": "",
+				"content_url": "",
+				"source_tld": "www.tumblr.com",
+				"source_post_url": "http://www.tumblr.com",
+				"import_datetime": "2014-01-04 15:39:18",
+				"trending_datetime": "1970-01-01 00:00:00",
+				"images": {
+					"fixed_height": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200.gif",
+						"width": "193",
+						"height": "200",
+						"mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200.mp4"
+					},
+					"fixed_height_still": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_s.gif",
+						"width": "193",
+						"height": "200"
+					},
+					"fixed_height_downsampled": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200_d.gif",
+						"width": "193",
+						"height": "200"
+					},
+					"fixed_width": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w.gif",
+						"width": "200",
+						"height": "207",
+						"mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/200w.mp4"
+					},
+					"fixed_width_still": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_s.gif",
+						"width": "200",
+						"height": "207"
+					},
+					"fixed_width_downsampled": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/200w_d.gif",
+						"width": "200",
+						"height": "207"
+					},
+					"downsized": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
+						"width": "400",
+						"height": "414",
+						"size": "422870"
+					},
+					"downsized_still": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
+						"width": "400",
+						"height": "414"
+					},
+					"original": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy.gif",
+						"width": "400",
+						"height": "414",
+						"size": "422870",
+						"frames": "39",
+						"mp4": "http://media.giphy.com/media/sj0sbNi9cv2dG/giphy.mp4"
+					},
+					"original_still": {
+						"url": "http://media2.giphy.com/media/sj0sbNi9cv2dG/giphy_s.gif",
+						"width": "400",
+						"height": "414"
+					}
+				}
+			},
+			... 24 more items
+		],
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		},
+		"pagination": {
+			"total_count": 573,
+			"count": 25,
+			"offset": 0
+		}
+	}
+
 
 
 ### STICKER Trending Endpoint
@@ -1195,14 +1195,14 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
 + limit - (optional) number of results to return, maximum 100. Default: 25
 + offset - (optional) results offset, defaults to 0);
 + fmt - (optional) return results in html or json format (useful for viewing responses as GIFs to debug/test)
-+ rating - limit results to those rated (y,g, pg, pg-13 or r). 
++ rating - limit results to those rated (y,g, pg, pg-13 or r).
 
 ### Sample Response: Trending Stickers
 
-    {
-        data: [
-            {
-            	type: "gif",
+	{
+		data: [
+			{
+				type: "gif",
 				id: "sj0sbNi9cv2dG",
 				slug: "cat-transparent-sj0sbNi9cv2dG",
 				url: "http://giphy.com/gifs/cat-transparent-sj0sbNi9cv2dG",
@@ -1214,8 +1214,8 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
 				rating: "g",
 				caption: "",
 				content_url: "",
-		      	source_tld: "ibehhvinny.tumblr.com",
-      			source_post_url: "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
+				source_tld: "ibehhvinny.tumblr.com",
+				source_post_url: "http://ibehhvinny.tumblr.com/post/71539185754/so-coot",
 				import_datetime: "2014-01-04 15:39:18",
 				trending_datetime: "1970-01-01 00:00:00",
 				images: {
@@ -1324,19 +1324,19 @@ Get the latest stickers trending on Giphy with this endpoint. Hand curated by th
 						width: "400",
 						height: "414"
 					}
-				}                
-        	},      
-            ... 24 more items
-        ],
-        pagination: {
-            count: 25,
-            offset: 0
-        },
-        meta: {
-            status: 200,
-            msg: "OK"
-        }
-    }
+				}
+			},
+			... 24 more items
+		],
+		pagination: {
+			count: 25,
+			offset: 0
+		},
+		meta: {
+			status: 200,
+			msg: "OK"
+		}
+	}
 
 ### STICKER Translate Endpoint
 
@@ -1360,9 +1360,9 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 
 ### Sample Response, Translate
 
-    {
-        "data": {
-            type: "gif",
+	{
+		"data": {
+			type: "gif",
 			id: "11eZCNibwDFx6w",
 			slug: "11eZCNibwDFx6w",
 			url: "http://giphy.com/gifs/11eZCNibwDFx6w",
@@ -1375,7 +1375,7 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 			caption: "",
 			content_url: "",
 			source_tld: "gifbay.com",
-    		source_post_url: "http://www.gifbay.com/gif/here_take_this-123255/",
+			source_post_url: "http://www.gifbay.com/gif/here_take_this-123255/",
 			import_datetime: "2014-03-25 00:52:20",
 			trending_datetime: "2015-01-08 16:09:46",
 			images: {
@@ -1484,17 +1484,18 @@ Using the same alogirithm as the GIF translate endpoint, the sticker translate e
 					width: "294",
 					height: "199"
 				}
-        },
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        }
-    }
+			},
+		},
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		}
+	}
 
 ### STICKER Roulette (Random) Endpoint
 
 Returns a spotaneously selected sticker from Giphy's sticker collection. Optionally limit scope of result to a specific tag. Like the GIF random endpoint, Punctuation will be stripped and ignored. Use a hyphen for phrases. Example [oops](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops), [birthday](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=birthday) or [thank-you](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=thank+you). Search terms should be URL encoded.
-    
+
     http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops
 
 [Example](http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC) random query.
@@ -1506,14 +1507,14 @@ Returns a spotaneously selected sticker from Giphy's sticker collection. Optiona
 ###### Parameters
 
 + tag - search query term or phrase
-+ rating - limit results to those rated (y,g, pg, pg-13 or r). 
++ rating - limit results to those rated (y,g, pg, pg-13 or r).
 + fmt - (optional) return results in 'html' or 'json' format (useful for viewing responses as GIFs to debug/test)
 
 ###### Sample Reponse: Random
 
-    {
-        "data": {
-           type: "gif",
+	{
+		"data": {
+			type: "gif",
 			id: "XMfznXqrNvH2w",
 			url: "http://giphy.com/gifs/animatedtext-transparent-lol-XMfznXqrNvH2w",
 			image_original_url: "http://s3.amazonaws.com/giphygifs/media/XMfznXqrNvH2w/giphy.gif",
@@ -1536,12 +1537,12 @@ Returns a spotaneously selected sticker from Giphy's sticker collection. Optiona
 			fixed_width_small_still_url: "http://s3.amazonaws.com/giphygifs/media/XMfznXqrNvH2w/100w_s.gif",
 			fixed_width_small_width: "100",
 			fixed_width_small_height: "24"
-		},   
-        "meta": {
-            "status": 200,
-            "msg": "OK"
-        }
-    }
+		},
+		"meta": {
+			"status": 200,
+			"msg": "OK"
+		}
+	}
 
 
 **Once you are ready to use the Giphy STICKER API in production**, please visit [api.giphy.com/submit](http://api.giphy.com/submit) to request a unique API key. As per our section 5 A of our terms of service, we require all apps that use the Giphy API to conspicuously display "Powered By Giphy" attribution marks where the API is utilized. You can find approved official logo marks [here](http://www.google.com/url?q=http%3A%2F%2Fgiphymedia.s3.amazonaws.com%2Fgiphy-attribution-marks.zip&sa=D&sntz=1&usg=AFQjCNH2vioX4nvSrL6iR2kuB_WG-85VLA).
@@ -1579,8 +1580,8 @@ require 'json'
 url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5"
 resp = Net::HTTP.get_response(URI.parse(url))
 buffer = resp.body
-result = JSON.parse(buffer) 
-puts result 
+result = JSON.parse(buffer)
+puts result
 ```
 
 
@@ -1597,7 +1598,7 @@ print_r(json_decode(file_get_contents($url)));
 
     # curl, command line
     curl "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=5"
-    
+
 ## Rendition Guide
 
 + <b>fixed_height</b> - Height set to 200px. Good for mobile use.
@@ -1612,13 +1613,13 @@ print_r(json_decode(file_get_contents($url)));
 + <b>fixed_width_small_still</b> - Static preview image for fixed_width_small
 + <b>preview</b> - File size under 50kb. Duration may be truncated to meet file size requirements. Good for thumbnails and previews.
 + <b>downsized_small</b> - File size under 200kb.
-+ <b>downsized</b> - File size under 2mb. 
-+ <b>downsized_medium</b> - File size under 5mb. 
-+ <b>downsized_large</b> - File size under 8mb. 
++ <b>downsized</b> - File size under 2mb.
++ <b>downsized_medium</b> - File size under 5mb.
++ <b>downsized_large</b> - File size under 8mb.
 + <b>downsized_still</b> - Static preview image for downsized
 + <b>original</b> - Original file size and file dimensions. Good for desktop use.
 + <b>original_still</b> - Preview image for original
-+ <b>looping</b> - Duration set to loop for 15 seconds. Only recommended for this exact use case. 
++ <b>looping</b> - Duration set to loop for 15 seconds. Only recommended for this exact use case.
 
 ## Language Support
 
@@ -1656,7 +1657,7 @@ The GIPHY API offers language support across the Search and Translate APIs.
 + Swedish (sv)
 + Czech (cs)
 + Hindi (hi)
-+ Bengali - bn 
++ Bengali - bn
 + Danish - da
 + Farsi - fa
 + Filipino - tl
@@ -1677,7 +1678,7 @@ Please note that the beta key will only allow you to upload content and retrieve
 
 #### Request an Upload Production Key
 
-Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](https://www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire. 
+Production Upload keys require a Giphy Channel Username to upload, host, and post content to. You can create a Giphy Channel by visiting [Giphy.com/join](https://www.giphy.com/join). If you already have an existing Channel, you can use the same one if you desire.
 
 Once your Channel is created, please include the Channel username (example: For giphy.com/community/test, your username is test) in your submission using the same [Giphy API submission form](https://github.com/giphy/Giphyapi#request-a-production-key). You will be prompted to submit your Giphy Channel username once you select "Upload" as your type of application. <b>Please be prepared to provide all the following information detailed in the submission form.</b>
 
@@ -1685,32 +1686,32 @@ Please note that production keys are currently limited to 1000 uploads per day. 
 
 ## Overview
 
-The Giphy Upload API allows you to upload and host your content programmatically to Giphy.com. We accept animated gifs or video files up to 100MB. Hosted Giphy URLs are supported and play on every major social network. 
+The Giphy Upload API allows you to upload and host your content programmatically to Giphy.com. We accept animated gifs or video files up to 100MB. Hosted Giphy URLs are supported and play on every major social network.
 
 The following documentation describes how to upload animated GIFs or videos to Giphy.com using the API. If you're using the beta key, you will not need to include a Giphy channel username to your request. Only approved apps will need to include a Giphy channel username. You can use the endpoint to upload your content, attach tags and other meta tag in a single HTTP or HTTPS POST request.
 
 #### Upload Endpoint
 
-###### path 
+###### path
 	Host: upload.giphy.com
 	URI: /v1/gifs
 	Type: POST
 
 ###### parameters
 + api_key : your private API key (string, required)
-+ username : your assigned username (string, required for approved apps only) 
++ username : your assigned username (string, required for approved apps only)
 + file : the animated GIF or video file (local file resource, required if no source_image_url supplied)
 + source_image_url : the URL for the image or video you wish to upload (string, required if no file parameter specified)
 + tags : comma delimited list of tags (string, optional)
 + source_post_url : the source of the asset (string, optional)
 + is_hidden : true (boolean, optional)
-	
+
 The only three fields that are required are api_key, username and the file <b>OR</b> source_image_url.  If both file & source_image_url form fields are supplied in the request, <b>the file parameter will be used over the source_image_url</b>. The is_hidden parameter allows you to mark your uploaded content as private (only visible on giphy.com if logged in as the associated user)
 
 #### Upload Code Examples
-	
+
 ###### cURL example upload using a file parameter:
-	
+
 	curl -v -F "username=yourusername" -F "file=@/Some/path/to/giphy.gif"  -F "api_key=YOUR_API_KEY" -F "tags=tag1,tag2,tag3" -F "source_post_url=http://your.source-url.tld" "http://upload.giphy.com/v1/gifs"
 
 ###### cURL example upload using a source_image_url as a source:
@@ -1737,11 +1738,11 @@ The only three fields that are required are api_key, username and the file <b>OR
 Successful upload requests will result in a JSON response with a <b>200</b> status code:
 
 	{"data":{"id":"your_new_gif_id"},"meta":{"status":200,"msg":"OK"}}
-	
+
 Failed responses return a JSON response with a <b>400</b> error code):
 
 	{"meta":{"status":403,"msg":"Forbidden"}}  // bad API KEY
-	
+
 	{"meta":{"status":403,"msg":"Bad Request - Error creating GIF"}} // attempting to upload a file that's not a valid animated GIF	   
 ## Sharing and Promoting your Giphy API Project
 
