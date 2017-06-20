@@ -4,7 +4,7 @@
 
 # GIPHY API Documentation
 
-**6/20/17 Update:** The documentation that used to live here has moved! If you're looking for the GIPHY API documentation that used to appear here, check out the [new home for our docs](http://developers.giphy.com/docs) on our standalone developer portal, [GIPHY Developers](http://developers.giphy.com)!
+**6/20/17 Update:** The documentation that used to live here has moved! Check out the [new home for our docs](http://developers.giphy.com/docs) on our standalone developer portal, [GIPHY Developers](http://developers.giphy.com)!
 
 [GIPHY](http://www.giphy.com) is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. The GIPHY API is a series of JSON read endpoints that allow you to integrate the features of GIPHY's search engine into your project or app. 
 
