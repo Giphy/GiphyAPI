@@ -14,4 +14,4 @@ To view detailed documentation and code samples and to be assigned API Keys for 
 
 To report issues with the API or its documentation, please use the [GitHub Issues](https://github.com/Giphy/GiphyAPI/issues) tab for this repo. We appreciate your feedback!
 
-# Learn more about Engineering at Giphy at [giphy engineering](https://engineering.giphy.com) 
+# Learn more about [Engineering at Giphy](https://engineering.giphy.com) 
