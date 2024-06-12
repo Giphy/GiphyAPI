@@ -2,16 +2,30 @@
 <img align="center" src="api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
 </p>
 
-# GIPHY API Documentation
+## GIPHY API 
+This repository previously hosted GIPHY API documentation, but is no longer active.
 
-**6/20/17 Update:** The documentation that used to live here has moved! Check out the [new home for our docs](http://developers.giphy.com/docs) on our standalone developer portal, [GIPHY Developers](http://developers.giphy.com)!
+Please see the links below for the latest and greatest GIPHY developer resources:
 
-[GIPHY](http://www.giphy.com) is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. The GIPHY API is a series of JSON read endpoints that allow you to integrate the features of GIPHY's search engine into your project or app. 
+[GIPHY API Documentation](https://developers.giphy.com/docs/api)\
+[Manage your GIPHY API Keys](https://developers.giphy.com/dashboard/)
 
-To view detailed documentation and code samples and to be assigned API Keys for your apps, visit [GIPHY Developers](http://developers.giphy.com), our developer portal.
+### Developer Support
+[Frequently asked questions](https://developers.giphy.com/faq/)
 
-# Reporting Issues
+We appreciate your feedback! To contact our support staff with issues or requests related to the GIPHY API, please use the following forms or reach out to developers@giphy.com:
 
-To report issues with the API or its documentation, please use the [GitHub Issues](https://github.com/Giphy/GiphyAPI/issues) tab for this repo. We appreciate your feedback!
+[Submit Technical Issues](https://support.giphy.com/hc/en-us/requests/new?ticket_form_id=360001681251)\
+[Feature Requests and General Feedback](https://support.giphy.com/hc/en-us/requests/new?ticket_form_id=7273557128474)
 
-# Learn more about [Engineering at Giphy](https://engineering.giphy.com) 
+_We do not monitor GitHub Issues for this repo._
+
+### GIPHY SDKs
+GIPHY provides a number of front-end SDKs that ease the integration process and ensure a high quality search experience for your users.
+
+[GIPHY iOS SDK](https://github.com/Giphy/giphy-ios-sdk)\
+[GIPHY Android SDK](https://github.com/Giphy/giphy-android-sdk)\
+[GIPHY React Native SDK](https://github.com/Giphy/giphy-react-native-sdk)\
+[GIPHY Flutter SDK](https://github.com/Giphy/giphy-flutter-sdk)\
+[GIPHY JS SDK](https://github.com/Giphy/giphy-js)\
+## Learn more about [Engineering at Giphy](https://engineering.giphy.com) 
